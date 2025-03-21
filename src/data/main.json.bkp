@@ -1,0 +1,27 @@
+[
+  {
+    "id": "rei-dos-ceus",
+    "name": "Мlтва с™0му д¦у: ЦRю2 нбcный",
+    "namePronunciation": "Molítva Sviatómu Dúrru: Tsáriu Nyebyesni",
+    "text": [
+      {
+        "word": "ЦRю",
+        "translation": "Rei dos",
+        "pronunciation": "Tsáriu",
+        "case": ""
+      },
+      {
+        "word": "нбcный,",
+        "translation": "dos Ceús",
+        "pronunciation": "nyebyesni",
+        "case": ""
+      },
+      {
+        "word": "ўтёшителю,",
+        "translation": "consolador",
+        "pronunciation": "utyêchityeliu",
+        "case": ""
+      }
+    ]
+  }
+]

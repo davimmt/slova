@@ -1,0 +1,40 @@
+---
+import '../../styles/global.css';
+import data from '../../data/main.json';
+
+export function getStaticPaths() {
+  return data.map(i => ({
+    params: { id: i.id }
+  }));
+}
+
+const { id } = Astro.params;
+const item = data.find(i => i.id === id);
+
+if (!data) {
+  return new Response('Documento não encontrado', { status: 404 });
+}
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Slova - {item.name}</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="slavonic">{item.name}</h1>
+      <div class="text">
+        {item.text.map(i => (
+	<span class="word slavonic" data-tooltip=`${i.translation} | ${i.pronunciation}`>
+            {i.word}
+          </span>
+        ))}
+      </div>
+    </div>
+    <div class="container">
+      <a href="/">Página Inicial</a>
+    </div>
+  </body>
+</html>

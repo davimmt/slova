@@ -1,0 +1,16 @@
+---
+import '../styles/global.css';
+import data from '../data/main.json';
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lista de Documentos</title>
+  </head>
+  <body>
+    <h1>Slova</h1>
+    <ul>{data.map((i) => (<li><a class="slavonic" href={`/d/${i.id}`}>{i.name}</a></li>))}</ul>
+  </body>
+</html>
