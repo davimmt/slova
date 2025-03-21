@@ -3,6 +3,7 @@
     "id": "rei-dos-ceus",
     "name": "Мlтва с™0му д¦у: ЦRю2 нбcный",
     "title": "Rei dos Céus",
+    "translation": "Oração ao Espírito Santo: Rei dos Céus",
     "text": [
       {"word": "ЦRю2", "translation": "Rei dos", "pronunciation": "Tsáriu", "case": "Vocativo"},
       {"word": "нбcный,", "translation": "Céus", "pronunciation": "niebiesny", "case": "Genitivo"},
@@ -41,6 +42,7 @@
   {
     "id": "pai-nosso",
     "name": "Мlтва гDнz: Џ§е нaшъ",
+    "translation": "Oração do Senhor: Pai Nosso",
     "title": "Pai Nosso",
     "text": [
       {"word": "Џ§е", "translation": "Pai", "pronunciation": "Otche", "case": "Vocativo"},
@@ -100,6 +102,7 @@
   {
     "id": "credo",
     "name": "Сmмв0лъ правослaвныz вёры",
+    "translation": "Símbolo ortodoxo de fé",
     "title": "Credo",
     "text": [
       {"word": "[№]", "translation": "(artigo 1)", "pronunciation": "", "case": "Numeração"},

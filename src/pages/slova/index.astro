@@ -7,10 +7,25 @@ import data from '../../data/main.json';
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="/favicon.jpg">
     <title>Slova</title>
   </head>
-  <body>
-    <h1>Slova</h1>
-    <ul>{data.map((i) => (<li><a class="slavonic" href={`/slova/d/${i.id}`}>{i.name}</a></li>))}</ul>
+  <body style= "background-color: rgb(28,19,10)" class="min-h-screen text-white flex items-center justify-center">
+    <div class="container mx-auto p-6 max-w-2xl">
+      <h1 class="text-7xl sm:text-xl md:text-7xl lg:text-7xl font-bold text-center mb-10">
+        Slova
+      </h1>
+      <ul class="space-y-4 text-center">
+        {data.map(i => (
+          <li>
+            <a href={`/slova/d/${i.id}`} 
+               class="text-3xl sm:text-md mb:text-3xl lg:text-3xl text-red-500 hover:underline slavonic text-center">
+	       {i.name}
+	    </a>
+	    <i class="text-md sm:text-sm md:text-md lg:text-md block">({i.translation})</i>
+          </li>
+        ))}
+      </ul>
+    </div>
   </body>
 </html>
