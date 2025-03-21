@@ -30,29 +30,50 @@ body {
 
 .container {
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   color: #333;
   margin-bottom: 20px;
+  max-width: 100%; /* Garante que o contêiner não exceda a tela */
+  box-sizing: border-box; /* Inclui padding na largura */
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.slavonic {
+  font-family: "Triodion";
+}
+
+ul > li > a.slavonic {
+  font-size: 1.7em;
+  line-height: 1.7;
 }
 
 .text {
-  font-size: 1.5em;
-  line-height: 1.6;
+  font-size: 1.7em;
+  line-height: normal;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .word {
   position: relative;
-  margin: 0 5px; /* Espaço entre palavras */
+  margin: 0 7px; /* Espaço entre palavras */
   cursor: pointer; /* Indica que é interativo */
+  display: inline-block; /* Garante que cada palavra seja tratada como bloco inline */
+  user-select: none;
 }
 
 /* Estilo do tooltip */
 .word::after {
-  content: attr(data-tooltip); /* Usa o valor de data-tooltip */
+  content: attr(data-tooltip);
   position: absolute;
   bottom: 100%; /* Aparece acima da palavra */
   left: 50%;
@@ -62,19 +83,17 @@ h1 {
   font-family: Arial, sans-serif;
   padding: 5px 10px;
   border-radius: 4px;
-  font-size: 0.9em;
+  font-size: 0.5em;
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease;
   z-index: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .word:hover::after {
   opacity: 1;
   visibility: visible;
-}
-
-.slavonic {
-  font-family: "Triodion";
 }
