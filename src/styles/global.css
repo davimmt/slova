@@ -6,12 +6,12 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url(/fonts/triodion-ieUcs.eot);
-  src: url('/fonts/triodion-ieUcs.eot?#iefix') format('embedded-opentype'),
-       url(/fonts/triodion-ieUcs.woff2) format('woff2'),
-       url(/fonts/triodion-ieUcs.woff) format('woff'),
-       url(/fonts/triodion-ieUcs.ttf) format('truetype'),
-       url('/fonts/triodion-ieUcs.svg#triodion-ieUcs') format('svg');
+  src: url(/slova/fonts/triodion-ieUcs.eot);
+  src: url('/slova/fonts/triodion-ieUcs.eot?#iefix') format('embedded-opentype'),
+       url(/slova/fonts/triodion-ieUcs.woff2) format('woff2'),
+       url(/slova/fonts/triodion-ieUcs.woff) format('woff'),
+       url(/slova/fonts/triodion-ieUcs.ttf) format('truetype'),
+       url('/slova/fonts/triodion-ieUcs.svg#triodion-ieUcs') format('svg');
 }
 
 .slavonic {
