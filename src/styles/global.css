@@ -1,6 +1,24 @@
 @import "tailwindcss";
 
-/* From https://azbyka.ru/ */
+/* From https://sci.ponomar.net */
+@font-face {
+    font-family: 'Ponomar Unicode';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('/slova/fonts/PonomarUnicode.eot');
+    src: url('/slova/fonts/PonomarUnicode.eot?#iefix') format('embedded-opentype'),
+  	 url('/slova/fonts/PonomarUnicode.woff2') format('woff2'),
+	 url('/slova/fonts/PonomarUnicode.woff') format('woff'),
+	 url('/slova/fonts/PonomarUnicode.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Ponomar Unicode';
+}
+
+
+/* From https://azbyka.ru */
 @font-face {
   font-family: 'Triodion';
   font-weight: normal;
