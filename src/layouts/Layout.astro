@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+const siteName = "Slovo";
+const pageTitle = "Slovo";
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="/favicon.jpg"/>
+    <title>{pageTitle}</title>
+  </head>
+  <body class="min-h-screen flex items-center justify-center">
+    <p class="absolute flex top-3 justify-center opacity-7 max-[425px]:text-[10px]"><a class="outline-none" href="/slova/">{siteName}</a></p>
+    <div class="container mx-auto p-6 max-w-full">
+      <slot/>
+      <p class="text-center mt-3">
+        <a href="/slova/" class="text-(--primary) hover:underline text-sm">
+          Voltar ao início
+        </a>
+      </p>
+    </div>
+  </body>
+</html>

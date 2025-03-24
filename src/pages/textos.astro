@@ -1,42 +1,26 @@
 ---
-import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+const pageTitle = "Slova - Casos Gramaticais";
 import data from '../data/main.json';
 ---
-
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="icon" type="image/x-icon" href="/favicon.jpg">
-    <title>Slovo - Textos Litúrgicos</title>
-  </head>
-  <body style= "background-color: rgb(28,19,10)" class="min-h-screen text-white flex items-center justify-center">
-    <p class="absolute flex top-3 justify-center opacity-7 max-[425px]:text-[10px]">Slovo</p>
-    <div class="container mx-auto p-6 max-w-2xl">
-      <h1 class="text-7xl sm:text-xl md:text-7xl lg:text-7xl font-bold text-center mb-3">
-	Textos Litúrgicos
-      </h1>
-      <p class="text-center mb-10">
-        <a href="/slova/" class="text-gray-600 hover:underline text-sm">
-          Voltar ao início
-        </a>
-      </p>
-      <ul class="space-y-4 text-center">
-        {data.map(i => (
-        <li>
-          <a href={`/slova/d/${i.id}`} 
-             class="text-3xl sm:text-md mb:text-3xl lg:text-3xl text-red-500 hover:underline slavonic text-center">
-	     {i.name}
-	  </a>
-	  <i class="text-md sm:text-sm md:text-md lg:text-md block">({i.translation})</i>
-        </li>
-        ))}
-      </ul>
-      <p class="text-center mt-10">
-        <a href="/slova/" class="text-red-500 hover:underline text-sm">
-          Voltar ao início
-        </a>
-      </p>
-    </div>
-  </body>
+<Layout pageTitle={pageTitle}>
+  <h1 class="text-7xl sm:text-xl md:text-7xl lg:text-7xl font-bold text-center mb-3">
+    Textos Litúrgicos
+  </h1>
+  <p class="text-center mb-10">
+    <a href="/slova/" class="text-(--detail) hover:underline text-sm">
+      Voltar ao início
+    </a>
+  </p>
+  <ul class="space-y-4 text-center mb-10">
+    {data.map(i => (
+     <li>
+       <a href={`/slova/d/${i.id}`} 
+          class="text-3xl sm:text-md mb:text-3xl lg:text-3xl text-(--primary) hover:underline slavonic text-center">
+          {i.name}
+       </a>
+       <i class="text-md sm:text-sm md:text-md lg:text-md block">({i.translation})</i>
+     </li>
+     ))}
+  </ul>
 </html>
