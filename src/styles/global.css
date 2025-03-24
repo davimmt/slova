@@ -7,8 +7,59 @@
   --detail: var(--color-stone-700);
 }
 
+@font-face {
+  font-family: "Noto Serif Light";
+  src: url("/slova/fonts/NotoSerif-Light.ttf") format("truetype");
+  font-weight: lighter; /* 200 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Serif Light";
+  src: url("/slova/fonts/NotoSerif-LightItalic.ttf") format("truetype");
+  font-weight: lighter; /* 200 */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  src: url("/slova/fonts/NotoSerif-Medium.ttf") format("truetype");
+  font-weight: normal; /* 400 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  src: url("/slova/fonts/NotoSerif-MediumItalic.ttf") format("truetype");
+  font-weight: normal; /* 400 */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  src: url("/slova/fonts/NotoSerif-Bold.ttf") format("truetype");
+  font-weight: bold; /* 700 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  src: url("/slova/fonts/NotoSerif-BoldItalic.ttf") format("truetype");
+  font-weight: bold; /* 700 */
+  font-style: italic;
+}
+
 * {
-  font-family: 'Helvetic ';
+  font-family: 'Noto Serif';
+  font-weight: normal;
+}
+
+h1, strong {
+  font-weight: bold;
+}
+
+.light {
+  font-family: 'Noto Serif Light';
 }
 
 body {
