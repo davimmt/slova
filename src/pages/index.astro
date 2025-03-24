@@ -8,16 +8,52 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" type="image/x-icon" href="/slova/favicon.jpg">
     <title>Slovo</title>
+    <style>
+      [data-tooltip] {
+        cursor: pointer;
+      }
+  
+      [data-tooltip]::after {
+        content: attr(data-tooltip);
+        overflow: hidden;
+        visibility: hidden;
+        width: 200px;
+        font-size: 13px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 8px;
+        border-radius: 4px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+
+      [data-tooltip]:hover::after {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
   </head>
   <body class="min-h-screen flex items-center justify-center">
     <div class="container mx-auto p-6 max-w-2xl">
       <div class="relative text-center flex w-full justify-center text-(--primary)">
-        <span class="absolute bottom-20 text-7xl text-transparent opacity-7" style="-webkit-text-stroke: 2.5px var(--secondary);">&#9766;</span>
+	<span class="absolute bottom-20 text-7xl text-transparent opacity-7" 
+	      style="-webkit-text-stroke: 2.5px var(--secondary);">&#9766;
 	<!--&#9769;
             &#9840;
 	    &#x2720;-->
-	<h1 class="text-6xl font-bold mb-5">
-          Slovo
+	</span>
+	<h1 class="text-6xl font-bold mb-5 relative">
+	  Slovo
+	  <cite data-tooltip="'Slovo' significa 'Palavra' em Eslavo (Слово), 
+	    título atribuído diversas vezes a Cristo no decorrer das Escrituras." 
+	    class="text-[17px] max-[425px]:hidden absolute bottom-5 left-42">
+	  ¹</cite>
         </h1>
       </div>
       <div class="text-center mb-10">
