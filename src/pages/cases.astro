@@ -86,13 +86,13 @@ const data = [
   {data.map((i) =>
     <section class="mb-10">
       <h2 class=" text-3xl text-(--primary) text-center">{i.case}</h2>
-      <p class="text-center text-(--detail) mb-5 max-[425px]:text-[11px] sm:text-md">
+      <p class="text-center text-(--detail) mb-5 max-[425px]:text-[11px] text-sm">
         {i.grammaticalEquivalency} · {i.syntacticFunction}
       </p>
       {Object.entries(i.examples).map(([k, v]) => (
       <div class="container mx-auto mb-10">
-	<p class="slavonic max-[425px]:text-[1.2rem] md:text-3xl">{k}</p>
-	<p class="text-(--detail) max-[425px]:text-[13px] sm:text-md">{v}</p>
+	<p class="slavonic max-[425px]:text-[1.2rem] text-2xl">{k}</p>
+	<p class="text-(--detail) max-[425px]:text-[13px] text-sm">{v}</p>
       </div>
       ))}
       <hr class="mt-5 text-(--detail)"/>
