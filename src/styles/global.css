@@ -85,6 +85,7 @@ body {
   font-family: "Triodion";
 }
 
+/* Table related */
 thead > tr {
   background-color: var(--color-red-900);
   border: 1px solid var(--color-red-900);
@@ -105,4 +106,42 @@ tbody > tr > td.slavonic {
 th, td {
   border: 1px solid var(--color-red-900);
   background-color: transparent;
+}
+
+/* Hover data-tooltip related */
+[data-tooltip] {
+  cursor: pointer;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 13px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2px 7px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s;
+} 
+
+[data-tooltip]:not(.hover-left)::after {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+[data-tooltip].hover-left::after {
+  top: 0%;
+  right: 100%;
+  margin-right: 8px;
+}
+ 
+[data-tooltip]:hover::after {
+  visibility: visible;
+  opacity: 1;
 }

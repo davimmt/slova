@@ -23,8 +23,22 @@ if (!data) {
     <title>Slovo - {item.title}</title>
   </head>
   <body class="min-h-screen flex items-center justify-center overflow-x-hidden">
-    <p class="absolute flex top-3 justify-center opacity-7 max-[425px]:text-[10px]"><a class="outline-none" href="/slova/">Slovo</a></p>
-    <div class="container mx-auto p-10 max-w-full text-center">
+    <p class="absolute flex top-3 justify-center opacity-7 max-[425px]:text-[10px]">
+      <a class="outline-none" href="/slova/">Slovo</a>
+    </p>
+    <span class="z-1 absolute top-3 right-3 hover-left after:w-[100px]" data-tooltip="Clique nas palavras para descrevê-las."
+      onclick="openModal('modal-tip')">
+      <svg class="hover:stroke-(--primary) focus:stroke-(--primary) transition-colors duration-200" 
+        viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" width="20" height="20">
+        <!-- Circle -->
+        <circle cx="12" cy="12" r="10"/>
+        <!-- "i" stem -->
+        <line x1="12" y1="10" x2="12" y2="18"/>
+        <!-- "i" dot -->
+        <circle cx="12" cy="7" r="0.5"/>
+      </svg>
+    </span>
+    <div class="container mx-auto p-10 max-w-full text-center relative">
       <h1 class="text-5xl sm:text-md md:text-5xl lg:text-5xl font-bold mb-3 slavonic text-(--primary)">
         {item.name}
       </h1>
@@ -33,7 +47,7 @@ if (!data) {
       </h3>
       <div class="text-3xl sm:text-md md:text-3xl lg:text-3xl leading-relaxed break-words mb-6 lg:px-50">
         {item.text.map(i => (
-          <button type="button" class="relative mx-2 inline-block cursor-pointer hover:text-(--primary) transition-colors duration-200 focus:outline-none hover:after:opacity-100 hover:after:visible after:content-[attr(data-tooltip)] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:bg-gray-800 after:text-white after:text-sm after:px-2 after:py-1 after:rounded after:opacity-0 after:invisible after:transition-opacity after:duration-200 after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap after:z-10" data-tooltip=`${i.pronunciation} | ${i.translation}`" onclick={`openModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}')`}>
+	<button type="button" class="relative mx-2 inline-block hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.pronunciation} | ${i.translation}`" onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
             <span class="slavonic select-text sm:select-none">{i.word}</span>
           </button>
         ))}
@@ -46,7 +60,7 @@ if (!data) {
     </div>
 
     <!-- Modal -->
-    <div id="modal" style="background-color: rgba(0,0,0,0.8)" class="fixed inset-0 hidden flex items-center justify-center z-50 text-white">
+    <div id="modal" style="background-color: rgba(0,0,0,0.8)" class="modal fixed inset-0 hidden flex items-center justify-center z-50 text-white">
       <div style="background-color: rgb(43,30,18)" class="p-6 rounded-lg max-w-md w-full mx-4">
         <h2 id="modal-word" class="text-5xl max-[425px]:text-4xl font-bold text-(--primary) mb-4 slavonic text-center"></h2>
         <p class="text-lg"><strong>Pronúncia: </strong><span id="modal-pronunciation"></span></p>
@@ -55,23 +69,34 @@ if (!data) {
       </div>
     </div>
 
+    <div id="modal-tip" style="background-color: rgba(0,0,0,0.8)" class="modal fixed inset-0 hidden flex items-center justify-center z-50 text-white">
+      <div class="bg-(--background) p-6 rounded-lg mx-3">
+        <p class="text-md"><strong>Clique</strong> nas palavras para descrevê-las.</p>
+      </div>
+    </div>
+
     <script is:inline>
-      function openModal(word, translation, pronunciation, caseText) {
-        document.getElementById('modal').classList.remove('hidden');
+      function openModal(id) {
+        document.getElementById(id).classList.remove('hidden');
+        document.getElementById(id).classList.add('visible');
+      }
+
+      function populateModal(word, translation, pronunciation, caseText) {
         document.getElementById('modal-word').textContent = word;
         document.getElementById('modal-translation').textContent = translation;
         document.getElementById('modal-pronunciation').textContent = pronunciation;
         document.getElementById('modal-case').textContent = caseText;
       }
 
-      function closeModal() {
-        document.getElementById('modal').classList.add('hidden');
+      function closeModal(id) {
+        document.getElementById(id).classList.add('hidden');
+        document.getElementById(id).classList.remove('visible');
       }
 
       // Fechar o modal ao clicar fora dele
-      document.getElementById('modal').addEventListener('click', (e) => {
-        if (e.target === document.getElementById('modal')) {
-          closeModal();
+      document.addEventListener('click', (e) => {
+        if (e.target === document.getElementsByClassName('modal visible')[0]) {
+          closeModal(document.getElementsByClassName('modal visible')[0].id);
         }
       });
     </script>
