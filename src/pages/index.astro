@@ -12,13 +12,33 @@ import '../styles/global.css';
   <body class="min-h-screen flex items-center justify-center">
     <div class="container mx-auto p-6 max-w-2xl">
       <div class="relative text-center flex w-full justify-center text-(--primary)">
-	<span class="absolute bottom-20 text-7xl text-transparent opacity-7" 
-	   style="-webkit-text-stroke: 2.5px var(--secondary);">
-	   <!-- https://www.compart.com/en/unicode/search?q=cross#characters
-		https://www.w3schools.com/charsets/ref_utf_dingbats.asp
-	    -->
-	    ☦ 
- 	</span>
+        <span id="unicode-cross" class="absolute bottom-20 text-7xl text-transparent opacity-7"
+         style="-webkit-text-stroke: 2.5px var(--secondary);">
+          <!-- https://www.compart.com/en/unicode/search?q=cross#characters
+               https://www.w3schools.com/charsets/ref_utf_dingbats.asp
+          -->
+          ☦
+        </span>
+        <svg id="svg-cross" class="absolute hidden bottom-20 opacity-7" width="46pt" height="46pt" viewBox="0 0 255 322">
+	  <g transform="translate(0,322) scale(0.1, -0.1)" fill="var(--background)"
+	     stroke-linecap="square" stroke="var(--secondary)" stroke-width="100" shape-rendering="crispEdges">
+             <path
+              d="M1078 2788 l-3 -133 -197 -3 -198 -2 0 -140 0 -140 200 0 201 0 -3
+                -107 -3 -108 -352 -3 -353 -2 0 -135 0 -135 355 0 355 0 0 -240 c0 -132 -3
+                -240 -6 -240 -3 0 -74 50 -158 110 -84 60 -156 110 -159 110 -4 0 -7 -71 -7
+                -158 l0 -157 165 -118 165 -118 0 -399 0 -400 135 0 135 0 0 295 c0 205 3 295
+                11 295 9 0 174 -114 287 -198 l32 -24 0 163 -1 164 -162 115 -162 116 -3 342
+                -2 342 355 0 355 0 0 135 0 135 -352 2 -353 3 -3 108 -3 107 201 0 200 0 0
+                140 0 140 -197 2 -198 3 -3 133 -3 132 -134 0 -134 0 -3 -132z m234 -30 l3
+                -133 203 -3 202 -2 0 -110 0 -110 -205 0 -206 0 3 -137 3 -138 358 -3 357 -2
+                0 -105 0 -105 -360 0 -360 0 2 -362 3 -362 162 -116 162 -115 1 -123 c0 -96
+                -3 -121 -12 -116 -7 5 -78 54 -157 111 -79 57 -148 103 -152 103 -5 0 -9 -139
+                -9 -310 l0 -310 -100 0 -100 0 0 388 0 387 -165 119 -165 118 0 124 0 124 159
+                -115 c88 -63 162 -115 165 -115 3 0 6 128 6 285 l0 285 -355 0 -355 0 0 105 0
+                105 353 2 352 3 3 138 3 137 -201 0 -200 0 0 110 0 110 198 2 197 3 3 133 3
+                132 99 0 99 0 3 -132z"/>
+          </g>
+        </svg>
         <h1 class="text-6xl font-bold mb-5 relative">
 	  Slovo
 	  <cite data-tooltip="'Slovo' significa 'Palavra' em Eslavo (Слово), 
@@ -57,5 +77,11 @@ import '../styles/global.css';
       Este site não está pronto e pode apresentar diversos erros. <br/>
       Sugestões, correções, ajudas e dúvidas: mirandadavi.mt@gmail.com
     </p>
+    <script>
+      if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+        document.getElementById("svg-cross").classList.remove("hidden");
+        document.getElementById("unicode-cross").classList.add("hidden");
+      }
+    </script>
   </body>
 </html>
