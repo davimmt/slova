@@ -78,7 +78,7 @@ import '../styles/global.css';
       Sugestões, correções, ajudas e dúvidas: mirandadavi.mt@gmail.com
     </p>
     <script>
-      if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+      if ((/iPad|iPhone|iPod/.test(navigator.userAgent) || /Apple Computer/.test(navigator.vendor)) && !window.MSStream) {
         document.getElementById("svg-cross").classList.remove("hidden");
         document.getElementById("unicode-cross").classList.add("hidden");
       }
