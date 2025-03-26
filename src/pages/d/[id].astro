@@ -39,17 +39,20 @@ if (!data) {
       </svg>
     </span>
     <div class="container mx-auto p-10 max-w-full text-center relative">
-      <h1 class="text-5xl sm:text-md md:text-5xl lg:text-5xl font-bold mb-3 slavonic text-(--primary)">
+      <h1 class="text-5xl sm:text-md md:text-5xl lg:text-5xl font-bold mb-3 slavonic text-(--primary)"
+      onclick="changeText('cs')">
         {item.name}
       </h1>
-      <h3 class="text-sm md:text-md italic text-(--detail) mb-7">
+      <h3 class="text-sm md:text-md italic text-(--detail) mb-7"
+      onclick="changeText('p')">
         {item.translation}
       </h3>
       <div class="text-3xl sm:text-md md:text-3xl lg:text-3xl leading-relaxed break-words mb-6 lg:px-50">
         {item.text.map(i => (
-	<button type="button" class="relative mx-2 inline-block hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.pronunciation} | ${i.translation}`" onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
-            <span class="slavonic select-text sm:select-none">{i.word}</span>
-          </button>
+	<button type="button" class="cs relative mx-2 inline-block hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.pronunciation} | ${i.translation}`" onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
+          <span class="slavonic select-text sm:select-none">{i.word}</span>
+        </button>
+	<p class="p hidden relative mx-2">{i.pronunciation}</p>
         ))}
       </div>
       <p class="mt-6">
@@ -99,6 +102,29 @@ if (!data) {
           closeModal(document.getElementsByClassName('modal visible')[0].id);
         }
       });
+
+      function changeText(l) {
+        if (l === "cs") {
+	  for (const e of document.getElementsByClassName("p")) {
+	    e.classList.remove('inline-block');
+	    e.classList.add('hidden');
+	  }
+	  for (const e of document.getElementsByClassName("cs")) {
+	    e.classList.remove('hidden');
+	    e.classList.add('inline-block');
+	  }
+	}
+	else if (l == "p") {
+	  for (const e of document.getElementsByClassName("cs")) {
+	    e.classList.remove('inline-block');
+	    e.classList.add('hidden');
+	  }
+	  for (const e of document.getElementsByClassName("p")) {
+	    e.classList.remove('hidden');
+	    e.classList.add('inline-block');
+	  }
+	}
+      }
     </script>
   </body>
 </html>
