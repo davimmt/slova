@@ -1,5 +1,21 @@
 [
   {
+    "id": "oracao-de-jesus",
+    "name": "Мlтва I3}са, или СердцA",
+    "title": "Oração de Jesus",
+    "translation": "Oração de Jesus, ou do Coração",
+    "text": [
+      {"word": "ГDи", "translation": "Senhor", "pronunciation": "Gôspodi", "case": ""},
+      {"word": "I3}се", "translation": "Jesus", "pronunciation": "Íisusie", "case": ""},
+      {"word": "хrте2,", "translation": "Cristo,", "pronunciation": "ʁristiê,", "case": ""},
+      {"word": "сн7е", "translation": "Filho", "pronunciation": "Sínie", "case": ""},
+      {"word": "б9іи,", "translation": "de Deus,", "pronunciation": "Bôjii,", "case": ""},
+      {"word": "поми1луй", "translation": "[tem] piedade", "pronunciation": "pomílui", "case": ""},
+      {"word": "мz2,", "translation": "de mim,", "pronunciation": "miá,", "case": ""},
+      {"word": "грёшнаго.", "translation": "pecador.", "pronunciation": "griêxnago.", "case": ""}
+    ]
+  },
+  {
     "id": "rei-dos-ceus",
     "name": "Мlтва с™0му д¦у: ЦRю2 нбcный",
     "title": "Rei dos Céus",
