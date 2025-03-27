@@ -1,17 +1,17 @@
 ---
 import '../../styles/global.css';
-import data from '../../data/main.json';
+import texts from '../../data/textos.json';
 
 export function getStaticPaths() {
-  return data.map(i => ({
+  return texts.map(i => ({
     params: { id: i.id }
   }));
 }
 
 const { id } = Astro.params;
-const item = data.find(i => i.id === id);
+const item = texts.find(i => i.id === id);
 
-if (!data) {
+if (!item) {
   return new Response('Documento não encontrado', { status: 404 });
 }
 ---
