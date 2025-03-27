@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+const pageTitle = "Slova - Vocabulário";
+import vocabulary from '../data/vocabulario.json';
+---
+<Layout pageTitle={pageTitle}>
+  <h1 class="text-5xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-2 mt-5">
+    Vocabulário Eclesiástico
+  </h1>
+  <p class="text-center mb-10">
+    <a href="/slova/" class="text-(--detail) hover:underline text-sm">
+      Voltar ao início
+    </a>
+  </p>
+  <div class="overflow-x-auto">
+    <table class="w-full table-auto border-collapse text-center text-sm sm:text-md md:text-lg lg:text-xl">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">Palavra</th>
+          <th class="px-4 py-2">Descrição</th>
+          <th class="px-4 py-2">Transliteração</th>
+          <th class="px-4 py-2">Tradução</th>
+        </tr>
+      </thead>
+      <tbody>
+	{vocabulary.map((i) =>
+        <tr>
+	  <td class="px-4 py-2 slavonic text-3xl">{i.word}</td>
+	  <td class="px-4 py-2">{i.description}</td>
+	  <td class="px-4 py-2">{i.pronunciation}</td>
+	  <td class="px-4 py-2">{i.translation}</td>
+        </tr>
+	)}
+      </tbody>
+      <caption class="caption-bottom text-start text-(--detail) text-sm">
+      </caption>
+    </table>
+  </div>
+</Layout>
