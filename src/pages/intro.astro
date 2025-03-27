@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const pageTitle = "Slova - Casos Gramaticais";
+import alphabet from '../data/alfabeto.json';
+import words from '../data/palavras.json';
+import sections from '../data/trechos.json';
+import numerals from '../data/numerais.json';
 ---
 <Layout pageTitle={pageTitle}>
   <h1 class="text-5xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-2 mt-5">
@@ -27,279 +31,24 @@ const pageTitle = "Slova - Casos Gramaticais";
         </tr>
       </thead>
       <tbody>
+	{alphabet.map((i) =>
         <tr>
-          <td class="px-4 py-2 slavonic text-3xl">А а</td>
-          <td class="px-4 py-2">Азъ (Az)</td>
-          <td class="px-4 py-2">"a" como em "abacaxi"</td>
-          <td class="px-4 py-2 slavonic">Ґми1нь</td>
-          <td class="px-4 py-2">Amém</td>
-          <td class="px-4 py-2">Amém</td>
+	  <td class="px-4 py-2 slavonic text-3xl">{i.letter}</td>
+	  <td class="px-4 py-2">{i.name}</td>
+	  <td class="px-4 py-2">{i.phoneticEquivalency}</td>
+	  <td class="px-4 py-2 slavonic">{i.example}</td>
+	  <td class="px-4 py-2">{i.pronunciation}</td>
+	  <td class="px-4 py-2">{i.translation}</td>
         </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Б б</td>
-          <td class="px-4 py-2">Буки (Buki)</td>
-          <td class="px-4 py-2">"b" como em "bola"</td>
-          <td class="px-4 py-2 slavonic">Б9е</td>
-          <td class="px-4 py-2">Deus</td>
-          <td class="px-4 py-2">Deus</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">В в</td>
-          <td class="px-4 py-2">Вѣди (Vědi)</td>
-          <td class="px-4 py-2">"v" como em "vaca"</td>
-          <td class="px-4 py-2 slavonic">Вѣра</td>
-          <td class="px-4 py-2">Fé</td>
-          <td class="px-4 py-2">Fé</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Г г</td>
-          <td class="px-4 py-2">Глаголи (Glagoli)</td>
-          <td class="px-4 py-2">"g" como em "gato"</td>
-          <td class="px-4 py-2 slavonic">ГDи</td>
-          <td class="px-4 py-2">Senhor</td>
-          <td class="px-4 py-2">Senhor</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Д д</td>
-          <td class="px-4 py-2">Добро (Dobro)</td>
-          <td class="px-4 py-2">"d" como em "dado"</td>
-          <td class="px-4 py-2 slavonic">д¦у</td>
-          <td class="px-4 py-2">Espírito</td>
-          <td class="px-4 py-2">Espírito</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Е е</td>
-          <td class="px-4 py-2">Есть (Iest)</td>
-          <td class="px-4 py-2">"ie" como em "piedade"</td>
-          <td class="px-4 py-2 slavonic">Еси</td>
-          <td class="px-4 py-2">És</td>
-          <td class="px-4 py-2">És</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ж ж</td>
-          <td class="px-4 py-2">Живѣте (Jivěte)</td>
-          <td class="px-4 py-2">"j" como em "jogo"</td>
-          <td class="px-4 py-2 slavonic">Жи1зни</td>
-          <td class="px-4 py-2">Vida</td>
-          <td class="px-4 py-2">Vida</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ѕ ѕ</td>
-          <td class="px-4 py-2">Дзѣло (Dzělo)</td>
-          <td class="px-4 py-2">"dz" como em "nadze" (aproximado)</td>
-          <td class="px-4 py-2 slavonic">Ѕвѣзда</td>
-          <td class="px-4 py-2">Glória</td>
-          <td class="px-4 py-2">Glória</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">З з</td>
-          <td class="px-4 py-2">Земля (Zemlya)</td>
-          <td class="px-4 py-2">"z" como em "zebra"</td>
-          <td class="px-4 py-2 slavonic">Земли2</td>
-          <td class="px-4 py-2">Terra</td>
-          <td class="px-4 py-2">Terra</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">И и</td>
-          <td class="px-4 py-2">Иже (Izhe)</td>
-          <td class="px-4 py-2">"i" como em "iglu"</td>
-          <td class="px-4 py-2 slavonic">Истина</td>
-          <td class="px-4 py-2">Verdade</td>
-          <td class="px-4 py-2">Verdade</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">І і</td>
-          <td class="px-4 py-2">І (I)</td>
-          <td class="px-4 py-2">"i" como em "iglu"</td>
-          <td class="px-4 py-2 slavonic">Ісусъ</td>
-          <td class="px-4 py-2">Jesus</td>
-          <td class="px-4 py-2">Jesus</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">К к</td>
-          <td class="px-4 py-2">Како (Kako)</td>
-          <td class="px-4 py-2">"k" como em "casa"</td>
-          <td class="px-4 py-2 slavonic">Крестъ</td>
-          <td class="px-4 py-2">Cruz</td>
-          <td class="px-4 py-2">Cruz</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Л л</td>
-          <td class="px-4 py-2">Люди (Lyudi)</td>
-          <td class="px-4 py-2">"l" como em "lua"</td>
-          <td class="px-4 py-2 slavonic">Люди</td>
-          <td class="px-4 py-2">Povo</td>
-          <td class="px-4 py-2">Povo</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">М м</td>
-          <td class="px-4 py-2">Мыслѣте (Myslěte)</td>
-          <td class="px-4 py-2">"m" como em "mão"</td>
-          <td class="px-4 py-2 slavonic">Миръ</td>
-          <td class="px-4 py-2">Paz</td>
-          <td class="px-4 py-2">Paz</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Н н</td>
-          <td class="px-4 py-2">Нашъ (Nash)</td>
-          <td class="px-4 py-2">"n" como em "novo"</td>
-          <td class="px-4 py-2 slavonic">Небеса</td>
-          <td class="px-4 py-2">Céus</td>
-          <td class="px-4 py-2">Céus</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">О о</td>
-          <td class="px-4 py-2">Онъ (On)</td>
-          <td class="px-4 py-2">"o" como em "sol"</td>
-          <td class="px-4 py-2 slavonic">Отецъ</td>
-          <td class="px-4 py-2">Pai</td>
-          <td class="px-4 py-2">Pai</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">П п</td>
-          <td class="px-4 py-2">Покой (Pokoy)</td>
-          <td class="px-4 py-2">"p" como em "pai"</td>
-          <td class="px-4 py-2 slavonic">Побѣда</td>
-          <td class="px-4 py-2">Vitória</td>
-          <td class="px-4 py-2">Vitória</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Р р</td>
-          <td class="px-4 py-2">Рцы (Rtsy)</td>
-          <td class="px-4 py-2">"r" (rolado, como em "carro")</td>
-          <td class="px-4 py-2 slavonic">Радость</td>
-          <td class="px-4 py-2">Alegria</td>
-          <td class="px-4 py-2">Alegria</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">С с</td>
-          <td class="px-4 py-2">Слово (Slovo)</td>
-          <td class="px-4 py-2">"s" como em "sol"</td>
-          <td class="px-4 py-2 slavonic">Слово</td>
-          <td class="px-4 py-2">Slovo</td>
-          <td class="px-4 py-2">Palavra</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Т т</td>
-          <td class="px-4 py-2">Твѣрдо (Tvěrdo)</td>
-          <td class="px-4 py-2">"t" como em "teto"</td>
-          <td class="px-4 py-2 slavonic">Ты</td>
-          <td class="px-4 py-2">Tu</td>
-          <td class="px-4 py-2">Tu</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">У у</td>
-          <td class="px-4 py-2">Укъ (Uk)</td>
-          <td class="px-4 py-2">"u" como em "uva"</td>
-          <td class="px-4 py-2 slavonic">Учитель</td>
-          <td class="px-4 py-2">Mestre</td>
-          <td class="px-4 py-2">Mestre</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ф ф</td>
-          <td class="px-4 py-2">Фертъ (Fert)</td>
-          <td class="px-4 py-2">"f" como em "faca"</td>
-          <td class="px-4 py-2 slavonic">Фома</td>
-          <td class="px-4 py-2">Tomé</td>
-          <td class="px-4 py-2">Tomé</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Х х</td>
-          <td class="px-4 py-2">Хѣръ (Khěr)</td>
-          <td class="px-4 py-2">"kh" (guttural, como "rr" em "carro" em espanhol)</td>
-          <td class="px-4 py-2 slavonic">Христосъ</td>
-          <td class="px-4 py-2">Cristo</td>
-          <td class="px-4 py-2">Cristo</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ѡ ѡ</td>
-          <td class="px-4 py-2">Омега (Omega)</td>
-          <td class="px-4 py-2">"o" como em "sol"</td>
-          <td class="px-4 py-2 slavonic">Ѡтецъ</td>
-          <td class="px-4 py-2">Pai</td>
-          <td class="px-4 py-2">Pai</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ц ц</td>
-          <td class="px-4 py-2">Цы (Tsy)</td>
-          <td class="px-4 py-2">"ts" como em "pizza"</td>
-          <td class="px-4 py-2 slavonic">Царь</td>
-          <td class="px-4 py-2">Rei</td>
-          <td class="px-4 py-2">Rei</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ч ч</td>
-          <td class="px-4 py-2">Червь (Cherv)</td>
-          <td class="px-4 py-2">"ch" como em "chave"</td>
-          <td class="px-4 py-2 slavonic">Честный</td>
-          <td class="px-4 py-2">Honrado</td>
-          <td class="px-4 py-2">Honrado</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ш ш</td>
-          <td class="px-4 py-2">Ша (Sha)</td>
-          <td class="px-4 py-2">"sh" como em "show"</td>
-          <td class="px-4 py-2 slavonic">Шестъ</td>
-          <td class="px-4 py-2">Seis</td>
-          <td class="px-4 py-2">Seis</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Щ щ</td>
-          <td class="px-4 py-2">Ща (Shcha)</td>
-          <td class="px-4 py-2">"shch" (aproximado como "sh" prolongado)</td>
-          <td class="px-4 py-2 slavonic">Щедрый</td>
-          <td class="px-4 py-2">Generoso</td>
-          <td class="px-4 py-2">Generoso</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ъ ъ</td>
-          <td class="px-4 py-2">Йеръ (Yer)</td>
-          <td class="px-4 py-2">Sinal duro (não vocalizado, separa sílabas)</td>
-          <td class="px-4 py-2 slavonic">Съ нами</td>
-          <td class="px-4 py-2">Conosco</td>
-          <td class="px-4 py-2">Conosco</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ы ы</td>
-          <td class="px-4 py-2">Йеры (Yery)</td>
-          <td class="px-4 py-2">"y" (som entre "i" e "u", como "y" em "myth")</td>
-          <td class="px-4 py-2 slavonic">Сыну</td>
-          <td class="px-4 py-2">Ao Filho</td>
-          <td class="px-4 py-2">Ao Filho</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ь ь</td>
-          <td class="px-4 py-2">Йерь (Yer')</td>
-          <td class="px-4 py-2">Sinal suave (suaviza a consoante anterior)</td>
-          <td class="px-4 py-2 slavonic">День</td>
-          <td class="px-4 py-2">Dia</td>
-          <td class="px-4 py-2">Dia</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ѣ ѣ</td>
-          <td class="px-4 py-2">Ять (Yat)</td>
-          <td class="px-4 py-2">"ie" (som entre "e" e "ia")</td>
-          <td class="px-4 py-2 slavonic">Свѣтъ</td>
-          <td class="px-4 py-2">Luz</td>
-          <td class="px-4 py-2">Luz</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ю ю</td>
-          <td class="px-4 py-2">Ю (Yu)</td>
-          <td class="px-4 py-2">"iu" como em "união"</td>
-          <td class="px-4 py-2 slavonic">Юность</td>
-          <td class="px-4 py-2">Juventude</td>
-          <td class="px-4 py-2">Juventude</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic text-3xl">Ꙗ ꙗ</td>
-          <td class="px-4 py-2">Я (Ya)</td>
-          <td class="px-4 py-2">"ia" como em "tia"</td>
-          <td class="px-4 py-2 slavonic">Ꙗко</td>
-          <td class="px-4 py-2">Pois</td>
-          <td class="px-4 py-2">Pois</td>
-        </tr>
+	)}
       </tbody>
+      <caption class="caption-bottom text-start text-(--detail) text-sm">
+	¹ Lê-se "piêdade". Os sons de "o" e "e" são lidos "fechados" no eslavo.<br/>
+	² dz<br/>
+	³ Gutural, desconhecido no português. Semelhante ao ca[rr]o do espanhol. Transliterarei como "ʁ", "RR" ou "χ".<br/>
+	⁴ Som "sh" mais forte, em comparação com o anterior "x".<br/>
+	⁵ Gutural, desconhecido no português. Semelhante ao m[y]th do inglês (som entre "i" e "u", "ui"). Transliterarei como "y".
+      </caption>
     </table>
   </div>
   <h2 class="text-3xl font-bold text-center mt-10 mb-3">
@@ -315,26 +64,13 @@ const pageTitle = "Slova - Casos Gramaticais";
         </tr>
       </thead>
       <tbody>
+	{words.map((i) =>
         <tr>
-          <td class="px-4 py-2 slavonic">Б9е</td>
-          <td class="px-4 py-2">Bôje</td>
-          <td class="px-4 py-2">Deus</td>
+	  <td class="px-4 py-2 slavonic text-3xl">{i.word}</td>
+	  <td class="px-4 py-2">{i.pronunciation}</td>
+	  <td class="px-4 py-2">{i.translation}</td>
         </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic">ГDи</td>
-          <td class="px-4 py-2">Gôspodi</td>
-          <td class="px-4 py-2">Senhor</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic">Ґми1нь</td>
-          <td class="px-4 py-2">Amín</td>
-          <td class="px-4 py-2">Amém</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic">Ґллилyіа</td>
-          <td class="px-4 py-2">Alilúia</td>
-          <td class="px-4 py-2">Aleluia</td>
-        </tr>
+	)}
       </tbody>
     </table>
   </div>
@@ -351,46 +87,36 @@ const pageTitle = "Slova - Casos Gramaticais";
         </tr>
       </thead>
       <tbody>
+	{sections.map((i) =>
         <tr>
-          <td class="px-4 py-2 slavonic">ГDи, поми1луй.</td>
-          <td class="px-4 py-2">Gôspodi, pomílui.</td>
-          <td class="px-4 py-2">Senhor, tem piedade.</td>
+	  <td class="px-4 py-2 slavonic text-3xl">{i.section}</td>
+	  <td class="px-4 py-2">{i.pronunciation}</td>
+	  <td class="px-4 py-2">{i.translation}</td>
         </tr>
+	)}
+      </tbody>
+    </table>
+  </div>
+  <h2 class="text-3xl font-bold text-center mt-10 mb-3">
+    Numerais
+  </h2>
+  <div class="overflow-x-auto">
+    <table class="w-full table-auto border-collapse text-center text-sm sm:text-md md:text-lg lg:text-xl">
+      <thead>
         <tr>
-          <td class="px-4 py-2 slavonic">Подaй гDи.</td>
-          <td class="px-4 py-2">Podái, Gôspodi.</td>
-          <td class="px-4 py-2">Concede, Senhor.</td>
+          <th class="px-4 py-2">Numeral</th>
+          <th class="px-4 py-2">Transliteração</th>
+          <th class="px-4 py-2">Tradução</th>
         </tr>
+      </thead>
+      <tbody>
+	{numerals.map((i) =>
         <tr>
-          <td class="px-4 py-2 slavonic">Слaва nц7Y, и3 сн7у, и3 с™0му д¦у.</td>
-          <td class="px-4 py-2">Sláva Otsú, i Sýnu, i Sviatômu Dúrru.</td>
-          <td class="px-4 py-2">Glória ao Pai, ao Filho e ao Espírito Santo.</td>
+	  <td class="px-4 py-2 slavonic text-3xl">{i.number}</td>
+	  <td class="px-4 py-2">{i.pronunciation}</td>
+	  <td class="px-4 py-2">{i.equivalent}</td>
         </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic">И3 нhнэ и3 при1снw, и3 во вёки вэкHвъ.</td>
-          <td class="px-4 py-2">I nýnie i prísno, i vo víeki viekôv.</td>
-          <td class="px-4 py-2">E agora e sempre e pelos séculos dos séculos.</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic">С™hй б9е, с™hй крёпкій, с™hй безсмeртный, поми1луй нaсъ.</td>
-          <td class="px-4 py-2">Sviatý Bôje, Sviatý Kriêpki, Sviatý Biezmiêrtny, pomílui nás.</td>
-          <td class="px-4 py-2">Santo Deus, Santo Forte, Santo Imortal, tem piedade de nós.</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic">Подaй гDи.</td>
-          <td class="px-4 py-2">Podái, Gôspodi.</td>
-          <td class="px-4 py-2">Concede, Senhor.</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic">ТебЁ, гDи.</td>
-          <td class="px-4 py-2">Tiebê, Gôspodi.</td>
-          <td class="px-4 py-2">A Ti, Senhor.</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 slavonic">Ґллилyіа, аллилyіа, аллилyіа, слaва тебЁ, Б9е.</td>
-          <td class="px-4 py-2">Alilúia, alilúia, alilúia, sláva tiebê, Bôje.</td>
-          <td class="px-4 py-2">Aleluia, aleluia, aleluia, glória a ti, ó Deus.</td>
-        </tr>
+	)}
       </tbody>
     </table>
   </div>

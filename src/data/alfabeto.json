@@ -1,0 +1,282 @@
+[
+  {
+    "letter": "А а",
+    "name": "Азъ (Az)",
+    "phoneticEquivalency": "[a]bacaxi",
+    "example": "Ґми1нь",
+    "pronunciation": "Amín",
+    "translation": "Amém"
+  },
+  {
+    "letter": "Б б",
+    "name": "Буки (Buki)",
+    "phoneticEquivalency": "[b]ola",
+    "example": "Б9е",
+    "pronunciation": "Bôje",
+    "translation": "Deus"
+  },
+  {
+    "letter": "В в",
+    "name": "Вѣди (Vědi)",
+    "phoneticEquivalency": "[v]aca",
+    "example": "Вѣра",
+    "pronunciation": "Viêra",
+    "translation": "Fé"
+  },
+  {
+    "letter": "Г г",
+    "name": "Глаголи (Glagoli)",
+    "phoneticEquivalency": "[g]ato",
+    "example": "ГDи",
+    "pronunciation": "Gôspodi",
+    "translation": "Senhor"
+  },
+  {
+    "letter": "Д д",
+    "name": "Добро (Dobro)",
+    "phoneticEquivalency": "[d]ado",
+    "example": "д¦у",
+    "pronunciation": "Dúʁu",
+    "translation": "Espírito"
+  },
+  {
+    "letter": "Е е",
+    "name": "Есть (Iest)",
+    "phoneticEquivalency": "p[ie]dade¹",
+    "example": "Еси",
+    "pronunciation": "Iêsi",
+    "translation": "És"
+  },
+  {
+    "letter": "Ж ж",
+    "name": "Живѣте (Jivěte)",
+    "phoneticEquivalency": "[j]ogo",
+    "example": "Жи1зни",
+    "pronunciation": "Jízni",
+    "translation": "Vida"
+  },
+  {
+    "letter": "Ѕ ѕ",
+    "name": "Дзѣло (Dzělo)",
+    "phoneticEquivalency": "na[dz]e²",
+    "example": "Ѕвѣзда",
+    "pronunciation": "Glória",
+    "translation": "Glória"
+  },
+  {
+    "letter": "З з",
+    "name": "Земля (Zemlya)",
+    "phoneticEquivalency": "[z]ebra",
+    "example": "Земли2",
+    "pronunciation": "Ziemlí",
+    "translation": "Terra"
+  },
+  {
+    "letter": "И и",
+    "name": "Иже (Ije)",
+    "phoneticEquivalency": "[i]glu",
+    "example": "Истина",
+    "pronunciation": "Ínstina",
+    "translation": "Verdade"
+  },
+  {
+    "letter": "І і",
+    "name": "І (I)",
+    "phoneticEquivalency": "[i]glu",
+    "example": "Ісусъ",
+    "pronunciation": "Ísus",
+    "translation": "Jesus"
+  },
+  {
+    "letter": "К к",
+    "name": "Како (Kako)",
+    "phoneticEquivalency": "k | [ca]sa",
+    "example": "Крестъ",
+    "pronunciation": "Kriest",
+    "translation": "Cruz"
+  },
+  {
+    "letter": "Л л",
+    "name": "Люди (Lyudi)",
+    "phoneticEquivalency": "[l]ua",
+    "example": "Люди",
+    "pronunciation": "Liudi",
+    "translation": "Povo"
+  },
+  {
+    "letter": "М м",
+    "name": "Мыслѣте (Myslěte)",
+    "phoneticEquivalency": "[m]ão",
+    "example": "Миръ",
+    "pronunciation": "Mir",
+    "translation": "Paz"
+  },
+  {
+    "letter": "Н н",
+    "name": "Нашъ (Nash)",
+    "phoneticEquivalency": "[n]ovo",
+    "example": "Небеса",
+    "pronunciation": "Niebiesá",
+    "translation": "Céus"
+  },
+  {
+    "letter": "О о",
+    "name": "Онъ (On)",
+    "phoneticEquivalency": "[o]vo",
+    "example": "Отецъ",
+    "pronunciation": "Ôtiêts",
+    "translation": "Pai"
+  },
+  {
+    "letter": "П п",
+    "name": "Покой (Pokoy)",
+    "phoneticEquivalency": "[p]ai",
+    "example": "Побѣда",
+    "pronunciation": "Pobiêda",
+    "translation": "Vitória"
+  },
+  {
+    "letter": "Р р",
+    "name": "Рцы (Rtsy)",
+    "phoneticEquivalency": "pa[r]aíso",
+    "example": "Радость",
+    "pronunciation": "Radost",
+    "translation": "Alegria"
+  },
+  {
+    "letter": "С с",
+    "name": "Слово (Slovo)",
+    "phoneticEquivalency": "[s]ol",
+    "example": "Слово",
+    "pronunciation": "Slovo",
+    "translation": "Palavra"
+  },
+  {
+    "letter": "Т т",
+    "name": "Твѣрдо (Tvěrdo)",
+    "phoneticEquivalency": "[t]elha",
+    "example": "Ты",
+    "pronunciation": "Ty",
+    "translation": "Tu"
+  },
+  {
+    "letter": "У у",
+    "name": "Укъ (Uk)",
+    "phoneticEquivalency": "[u]va",
+    "example": "Учитель",
+    "pronunciation": "Utchítel",
+    "translation": "Mestre"
+  },
+  {
+    "letter": "Ф ф",
+    "name": "Фертъ (Fert)",
+    "phoneticEquivalency": "[f]aca",
+    "example": "Фома",
+    "pronunciation": "Foma",
+    "translation": "Tomé"
+  },
+  {
+    "letter": "Х х",
+    "name": "Хѣръ (Khěr)",
+    "phoneticEquivalency": "RR | ʁ | χ³",
+    "example": "Христосъ",
+    "pronunciation": "ʁristos",
+    "translation": "Cristo"
+  },
+  {
+    "letter": "Ѡ ѡ",
+    "name": "Омега (Omega)",
+    "phoneticEquivalency": "[o]vo",
+    "example": "Ѡтецъ",
+    "pronunciation": "Pai",
+    "translation": "Pai"
+  },
+  {
+    "letter": "Ц ц",
+    "name": "Цы (Tsy)",
+    "phoneticEquivalency": "[ts]unami",
+    "example": "Царь",
+    "pronunciation": "Tsar",
+    "translation": "Rei"
+  },
+  {
+    "letter": "Ч ч",
+    "name": "Червь (Cherv)",
+    "phoneticEquivalency": "[tc]hau",
+    "example": "Честный",
+    "pronunciation": "Tchiestny",
+    "translation": "Honrado"
+  },
+  {
+    "letter": "Ш ш",
+    "name": "Ша (Sha)",
+    "phoneticEquivalency": "[x]erife⁴",
+    "example": "Шестъ",
+    "pronunciation": "Shiest",
+    "translation": "Seis"
+  },
+  {
+    "letter": "Щ щ",
+    "name": "Ща (Shcha)",
+    "phoneticEquivalency": "[sh]ow⁴",
+    "example": "Щедрый",
+    "pronunciation": "Generoso",
+    "translation": "Generoso"
+  },
+  {
+    "letter": "Ы ы",
+    "name": "Йеры (Yery)",
+    "phoneticEquivalency": "y | ɨ⁵",
+    "example": "Сыну",
+    "pronunciation": "Ao Filho",
+    "translation": "Ao Filho"
+  },
+  {
+    "letter": "Ѱ ѱ",
+    "name": "",
+    "phoneticEquivalency": "[ps]eudo",
+    "example": "",
+    "pronunciation": "Psalôm",
+    "translation": "Salmo"
+  },
+  {
+    "letter": "Ъ ъ",
+    "name": "Йеръ (Yer)",
+    "phoneticEquivalency": " - (sinal duro, não vocalizado, separa sílabas)",
+    "example": "Съ нами",
+    "pronunciation": "Conosco",
+    "translation": "Conosco"
+  },
+  {
+    "letter": "Ь ь",
+    "name": "Йерь (Yer')",
+    "phoneticEquivalency": " - (sinal suave, suaviza a consoante anterior)",
+    "example": "День",
+    "pronunciation": "Diên",
+    "translation": "Dia"
+  },
+  {
+    "letter": "Ѣ ѣ",
+    "name": "Ять (Yat)",
+    "phoneticEquivalency": "\"ie\" (som entre \"e\" e \"ia\")*",
+    "example": "Свѣтъ",
+    "pronunciation": "Luz",
+    "translation": "Luz"
+  },
+  {
+    "letter": "Ю ю",
+    "name": "Ю (Yu)",
+    "phoneticEquivalency": "[iu]goslávia",
+    "example": "Юность",
+    "pronunciation": "Iunost",
+    "translation": "Juventude"
+  },
+  {
+    "letter": "Ꙗ ꙗ",
+    "name": "Я (Ya)",
+    "phoneticEquivalency": "[ia]te",
+    "example": "Ꙗко",
+    "pronunciation": "Iako",
+    "translation": "Pois"
+  }
+]
