@@ -1,41 +1,41 @@
 [
   {
-    "number": "а҃",
+    "number": "№",
     "pronunciation": "edín",
     "equivalent": "1"
   },
   {
-    "number": "в҃",
+    "number": "в7",
     "pronunciation": "dva",
     "equivalent": "2"
   },
   {
-    "number": "г҃",
+    "number": "G",
     "pronunciation": "tri",
     "equivalent": "3"
   },
   {
-    "number": "д҃",
+    "number": "д7",
     "pronunciation": "chetýre",
     "equivalent": "4"
   },
   {
-    "number": "є҃",
+    "number": "є7",
     "pronunciation": "piat",
     "equivalent": "5"
   },
   {
-    "number": "ѕ҃",
+    "number": "ѕ7",
     "pronunciation": "shest",
     "equivalent": "6"
   },
   {
-    "number": "з҃",
+    "number": "з7",
     "pronunciation": "sedm",
     "equivalent": "7"
   },
   {
-    "number": "и҃",
+    "number": "}",
     "pronunciation": "osm",
     "equivalent": "8"
   },
@@ -105,7 +105,7 @@
     "equivalent": "30"
   },
   {
-    "number": "м҃",
+    "number": "м7",
     "pronunciation": "chetyredesiat",
     "equivalent": "40"
   },
@@ -135,7 +135,7 @@
     "equivalent": "90"
   },
   {
-    "number": "р҃",
+    "number": "R",
     "pronunciation": "sto",
     "equivalent": "100"
   },
