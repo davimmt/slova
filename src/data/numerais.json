@@ -50,57 +50,22 @@
     "equivalent": "10"
   },
   {
-    "number": "і҃а҃",
+    "number": "і҃№",
     "pronunciation": "edín na désiate",
     "equivalent": "11"
   },
   {
-    "number": "і҃в҃",
+    "number": "і҃в",
     "pronunciation": "dva na désiate",
     "equivalent": "12"
   },
   {
-    "number": "і҃г҃",
-    "pronunciation": "tri na désiate",
-    "equivalent": "13"
-  },
-  {
-    "number": "і҃д҃",
-    "pronunciation": "chetýre na désiate",
-    "equivalent": "14"
-  },
-  {
-    "number": "і҃є҃",
-    "pronunciation": "piat na désiate",
-    "equivalent": "15"
-  },
-  {
-    "number": "і҃ѕ҃",
-    "pronunciation": "shest na désiate",
-    "equivalent": "16"
-  },
-  {
-    "number": "і҃з҃",
-    "pronunciation": "sedm na désiate",
-    "equivalent": "17"
-  },
-  {
-    "number": "і҃и҃",
-    "pronunciation": "osm na désiate",
-    "equivalent": "18"
-  },
-  {
-    "number": "і҃ѳ҃",
-    "pronunciation": "deviat na désiate",
-    "equivalent": "19"
-  },
-  {
-    "number": "к҃",
+    "number": "к7",
     "pronunciation": "dvadtsát",
     "equivalent": "20"
   },
   {
-    "number": "л҃",
+    "number": "л7",
     "pronunciation": "tridtsát",
     "equivalent": "30"
   },
@@ -110,27 +75,27 @@
     "equivalent": "40"
   },
   {
-    "number": "н҃",
+    "number": "н҃7",
     "pronunciation": "piatdesiat",
     "equivalent": "50"
   },
   {
-    "number": "ѯ҃",
+    "number": "з7",
     "pronunciation": "shestdesiat",
     "equivalent": "60"
   },
   {
-    "number": "о҃",
+    "number": "о7",
     "pronunciation": "sedmdesiat",
     "equivalent": "70"
   },
   {
-    "number": "п҃",
+    "number": "п7",
     "pronunciation": "osmdesiat",
     "equivalent": "80"
   },
   {
-    "number": "ч҃",
+    "number": "ч7",
     "pronunciation": "deviatdesiat",
     "equivalent": "90"
   },
