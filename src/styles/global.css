@@ -85,6 +85,10 @@ body {
   font-family: "Triodion";
 }
 
+h1, h2 {
+  color: var(--primary);
+}
+
 /* Table related */
 thead > tr {
   background-color: var(--color-red-900);

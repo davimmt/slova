@@ -23,7 +23,7 @@ if (!item) {
     <title>Slovo - {item.title}</title>
   </head>
   <body class="min-h-screen flex items-center justify-center overflow-x-hidden">
-    <p class="absolute flex top-3 justify-center opacity-7 max-[425px]:text-[10px]">
+    <p class="absolute z-1 flex top-3 justify-center opacity-7 max-[425px]:text-[10px]">
       <a class="outline-none" href="/slova/">Slovo</a>
     </p>
     <span class="z-1 absolute top-3 right-3 hover-left after:w-[100px]" data-tooltip="Clique nas palavras para descrevê-las."
@@ -49,10 +49,12 @@ if (!item) {
       </h3>
       <div class="text-3xl sm:text-md md:text-3xl lg:text-3xl leading-relaxed break-words mb-6 lg:px-50">
         {item.text.map(i => (
-	<button type="button" class="cs relative mx-2 inline-block hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.pronunciation} | ${i.translation}`" onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
+	<button class="cs relative mx-1 text-4xl hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.pronunciation} | ${i.translation}`" onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
           <span class="slavonic select-text sm:select-none">{i.word}</span>
+	</button>
+	<button class="p hidden relative mx-1 text-4xl hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.translation}`" onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
+          <span class="select-text sm:select-none">{i.pronunciation}</span>
         </button>
-	<p class="p hidden relative mx-2">{i.pronunciation}</p>
         ))}
       </div>
       <p class="mt-6">

@@ -15,33 +15,42 @@ import numerals from '../data/numerais.json';
       Voltar ao início
     </a>
   </p>
-  <h2 class="text-3xl font-bold text-center mb-10 text-(--primary)">
+  <h2 class="text-3xl font-bold text-center mb-10">
     Alfabeto
   </h2>
-  <div class="container-fluid mx-auto text-center text-white">
-    {alphabet.map((i) =>
-    <div class="inline-block max-[425px]:mb-10 max-[425px]:mr-5 min-[425px]:mb-20 min-[425px]:mr-10">
-      <p class="slavonic max-[620px]:text-5xl min-[620px]:text-7xl text-(--secondary)">
-        {i.letter}<span class="ml-1 max-[620px]:hidden text-(--detail) text-sm">
-	  {i.name}
-        </span>
-      </p>
-      <p class="text-start text-(--detail) min-[620px]:hidden text-[10px]">{i.name}</p>
-      <p class="text-start max-[620px]:text-[12px] min-[620px]:text-sm">{i.phoneticEquivalency} | 
-        <span class="slavonic text-[20px] max-[620px]:text-[15px]">{i.example}</span>
-      </p>
-      <p class="text-start max-[620px]:text-[10px] min-[620px]:text-sm">{i.pronunciation} | {i.translation}</p>
-    </div>
-    )}
+  <div class="overflow-x-auto">
+    <table class="w-full table-auto border-collapse text-center text-sm sm:text-md md:text-lg lg:text-xl">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">Letra</th>
+	  <!--<th class="px-4 py-2">Nome</th>-->
+          <th class="px-4 py-2">Equivalência Fonética</th>
+          <th class="px-4 py-2">Exemplo</th>
+          <th class="px-4 py-2">Transliteração</th>
+          <th class="px-4 py-2">Tradução</th>
+        </tr>
+      </thead>
+      <tbody>
+	{alphabet.map((i) =>
+        <tr>
+	  <td class="px-4 py-2 slavonic text-3xl">{i.letter}</td>
+	  <!--<td class="px-4 py-2">{i.name}</td>-->
+	  <td class="px-4 py-2">{i.phoneticEquivalency}</td>
+	  <td class="px-4 py-2 slavonic">{i.example}</td>
+	  <td class="px-4 py-2">{i.pronunciation}</td>
+	  <td class="px-4 py-2">{i.translation}</td>
+        </tr>
+	)}
+      </tbody>
+      <caption class="caption-bottom text-start text-(--detail) text-sm">
+	¹ Lê-se "piêdade", "ôtôrrino"; <a class="underline" href="#2">veja aqui.</a><br/>
+	² *<br/>
+	³ Gutural, <a class="underline" href="#3">veja aqui.</a><br/>
+	⁴ Som "sh" mais forte, em comparação com o anterior "x".<br/>
+	⁵ Gutural, <a class="underline" href="#3">veja aqui.</a><br/>
+      </caption>
+    </table>
   </div>
-  <p class="text-start text-(--detail) text-sm">
-    ¹ Lê-se "piêdade", "ôtôrrino"; <a class="underline" href="#2">veja aqui.</a><br/>
-    ² *<br/>
-    ³ Gutural, <a class="underline" href="#3">veja aqui.</a><br/>
-    ⁴ Som "sh" mais forte, em comparação com o anterior "x".<br/>
-    ⁵ Gutural, <a class="underline" href="#3">veja aqui.</a><br/>
-  </p>
-  <hr class="my-5 text-(--detail)"/>
   <h2 class="text-3xl font-bold text-center mt-10 mb-3">
     Notas da Transliteração
   </h2>
@@ -120,44 +129,73 @@ import numerals from '../data/numerais.json';
       </div>
     </div>
   </div>
-  <hr class="my-5 text-(--detail)"/>
-  <h2 class="text-3xl font-bold text-center mt-10 mb-5">
+  <h2 class="text-3xl font-bold text-center mt-10 mb-3">
     Palavras comuns dos Serviços Litúrgicos
   </h2>
-  <div class="container-fluid mx-auto mb-10 max-[500px]:text-center max-[500px]:flex max-[500px]:flex-wrap">
-    {words.map((i) =>
-    <div class="px-5 mb-5">
-      <p class="slavonic text-4xl text-(--secondary)">{i.word}</p>
-      <p class="text-sm text-white">{i.pronunciation}</p>
-      <p class="text-sm text-(--detail)">{i.translation}</p>
-    </div>
-    )}
+  <div class="overflow-x-auto">
+    <table class="w-full table-auto border-collapse text-center text-sm sm:text-md md:text-lg lg:text-xl">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">Palavra</th>
+          <th class="px-4 py-2">Transliteração</th>
+          <th class="px-4 py-2">Tradução</th>
+        </tr>
+      </thead>
+      <tbody>
+	{words.map((i) =>
+        <tr>
+	  <td class="px-4 py-2 slavonic text-3xl">{i.word}</td>
+	  <td class="px-4 py-2">{i.pronunciation}</td>
+	  <td class="px-4 py-2">{i.translation}</td>
+        </tr>
+	)}
+      </tbody>
+    </table>
   </div>
-  <hr class="text-(--detail)"/>
-  <h2 class="text-3xl font-bold text-center mt-10 mb-5">
+  <h2 class="text-3xl font-bold text-center mt-10 mb-3">
     Trechos comuns dos Serviços Litúrgicos
   </h2>
-  <div class="container-fluid mx-auto mb-10">
-  {sections.map((i) =>
-    <div class="mb-10">
-      <p class="slavonic text-4xl">{i.section}</p>
-      <p class="text-white text-md">{i.pronunciation}</p>
-      <p class="text-(--detail) text-sm">{i.translation}</p>
-    </div>
-  )}
+  <div class="overflow-x-auto">
+    <table class="w-full table-auto border-collapse text-center text-sm sm:text-md md:text-lg lg:text-xl">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">Texto</th>
+          <th class="px-4 py-2">Transliteração</th>
+          <th class="px-4 py-2">Tradução</th>
+        </tr>
+      </thead>
+      <tbody>
+	{sections.map((i) =>
+        <tr>
+	  <td class="px-4 py-2 slavonic text-3xl">{i.section}</td>
+	  <td class="px-4 py-2">{i.pronunciation}</td>
+	  <td class="px-4 py-2">{i.translation}</td>
+        </tr>
+	)}
+      </tbody>
+    </table>
   </div>
-  <hr class="my-5 text-(--detail)"/>
-  <h2 class="text-3xl font-bold text-center mt-10 mb-5 text-(--primary)">
+  <h2 class="text-3xl font-bold text-center mt-10 mb-3">
     Numerais
   </h2>
-  <div class="container-fluid mx-auto text-center text-white">
-    {numerals.map((i) =>
-    <div class="inline-block text-start mb-10 max-[425px]:mr-5 min-[425px]:mr-10">
-      <p class="slavonic text-7xl text-(--secondary)">
-        {i.number}<span class="ml-1 text-(--detail) text-sm">{i.equivalent}</span>
-      </p>
-      <p class="max-[425px]:text-[12px] min-[425px]:text-sm">{i.pronunciation}</p>
-    </div>
-    )}
+  <div class="overflow-x-auto">
+    <table class="w-full table-auto border-collapse text-center text-sm sm:text-md md:text-lg lg:text-xl">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">Numeral</th>
+          <th class="px-4 py-2">Transliteração</th>
+          <th class="px-4 py-2">Tradução</th>
+        </tr>
+      </thead>
+      <tbody>
+	{numerals.map((i) =>
+        <tr>
+	  <td class="px-4 py-2 slavonic text-3xl">{i.number}</td>
+	  <td class="px-4 py-2">{i.pronunciation}</td>
+	  <td class="px-4 py-2">{i.equivalent}</td>
+        </tr>
+	)}
+      </tbody>
+    </table>
   </div>
 </Layout>

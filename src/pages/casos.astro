@@ -1,154 +1,102 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const pageTitle = "Slova - Casos Gramaticais";
+const data = [
+  {
+    "case": "Nominativo",
+    "grammaticalEquivalency": "Sujeito da oração",
+    "syntacticFunction": "Sujeito, predicativo do sujeito",
+    "examples": {
+      "Свsтъ, свsтъ, свsтъ гDь саваHfъ.": "Santo, santo, santo é o Senhor dos Exércitos.",
+    },
+  },
+  {
+    "case": "Vocativo",
+    "grammaticalEquivalency": "Vocativo",
+    "syntacticFunction": "Chamamento, invocação direta",
+    "examples": {
+      "[ГDи], поми1луй.": "[Senhor], tem piedade.",
+      "[Боже], очисти мя грешного.*": "[Ó Deus], purifica-me pecador.",
+      "Бlгослови2, [душE моS], гDа.": "Bendiz, [ó minh'alma], ao Senhor.",
+    },
+  },
+  {
+    "case": "Genitivo",
+    "grammaticalEquivalency": "Complemento nominal (\"de algo\")",
+    "syntacticFunction": "Posse, origem, ausência",
+    "examples": {
+      "Бlгословeно [цrтво nц7A].": "Bendito seja [o Reino do Pai].",
+      "Во [и4мz nц7A].": "Em [nome do Pai].",
+      "И3 њчи1сти ны2 [t всsкіz сквeрны].": "E purifica-nos [de toda mácula]."
+    }
+  },
+  {
+    "case": "Dativo",
+    "grammaticalEquivalency": "Objeto indireto (\"para/a alguém\")",
+    "syntacticFunction": "Destinatário, direção, benefício",
+    "examples": {
+      "Слaва nц7Y.": "Glória ao Pai.",
+      "[Тебе] подобает всякая слава, честь и поклонение.*": "[A Ti] pertencem toda glória, honra e adoração.",
+      "И# [д¦ови твоемY].": "E [ao teu espírito]."
+    }
+  },
+  {
+    "case": "Acusativo",
+    "grammaticalEquivalency": "Objeto direto",
+    "syntacticFunction": "Objeto direto da ação",
+    "examples": {
+      "Вёрую во є3ди1наго бGа nц7A вседержи1телz.": "Creio em um só Deus Pai Todo-Poderoso.",
+      "Њ ми1рэ всегw2 [мjра].": "Pela paz de todo [o mundo].",
+      "Пріими1те, kди1те, [сіE є4сть тёло моE].": "Tomai, comei, [isto é o Meu Corpo].",
+      "Прес™yю, пречcтую, пребlгословeнную, слaвную вLчцу нaшу бцdу и3 приснодв7у мRjю.": "Santíssima, Puríssima, Bendita e Gloriosa Soberana, a Mãe de Deus e sempre Virgem Maria."
+    }
+  },
+  {
+    "case": "Instrumental",
+    "grammaticalEquivalency": "Adjunto adverbial de meio/modo (\"com algo\")",
+    "syntacticFunction": "Meio, modo, acompanhamento",
+    "examples": {
+      "И# [со д¦омъ твои1мъ].": "E [com teu espírito].",
+      "[Ми1ромъ] гDу пом0лимсz.": "[Em paz], oremos ao Senhor.",
+      "Заступи2... нaсъ, б9е, [твоeю благодaтію].": "Protege... a nós, Deus, [pela Tua Graça]."
+    }
+  },
+  {
+    "case": "Prepositivo",
+    "grammaticalEquivalency": "Adjunto adverbial de lugar/tema (\"em/sobre/por algo\")",
+    "syntacticFunction": "Localização, assunto, referência",
+    "examples": {
+      "[О Господе] воспою.*": "Cantarei [sobre o Senhor].",
+      "[Њ ми1рэ] всегw2 мjра.": "[Pela paz] de todo o mundo.",
+      "В [храме Твоем].*": "No [Teu templo]."
+    }
+  }
+];
 ---
 <Layout pageTitle={pageTitle}>
   <h1 class="text-5xl sm:text-3xl md:text-5xl lg:text-5xl font-bold text-center mt-5 mb-2">
     Casos Gramaticais
   </h1>
-  <p class="text-center mb-3">
+  <p class="text-center mb-10">
     <a href="/slova/" class="text-(--detail) hover:underline text-sm">
       Voltar ao início
     </a>
   </p>
   <div class="overflow-x-auto">
-    <table class="-full table-auto border-collapse text-center text-sm sm:text-md md:text-md lg:text-md">
-      <thead>
-        <tr>
-          <th class="px-4 py-2">Caso</th>
-          <th class="px-4 py-2">Função</th>
-          <th class="px-4 py-2">Equivalência Gramatical</th>
-          <th class="px-4 py-2">Exemplo</th>
-          <th class="px-4 py-2">Tradução</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="px-4 py-2">Nominativo</td>
-          <td class="px-4 py-2">Sujeito, predicativo do sujeito</td>
-          <td class="px-4 py-2">Sujeito da oração</td>
-          <td class="px-4 py-2 slavonic">Свsтъ, свsтъ, свsтъ гDь саваHfъ.</td>
-          <td class="px-4 py-2">Santo, santo, santo é o Senhor dos Exércitos.</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Vocativo</td>
-          <td class="px-4 py-2">Chamamento, invocação direta</td>
-          <td class="px-4 py-2">Vocativo</td>
-          <td class="px-4 py-2 slavonic">
-	    [ГDи], поми1луй.
-            <br/>---<br/>
-            [Боже], очисти мя грешного.*
-            <br/>---<br/>
-	    Бlгослови2, [душE моS], гDа.
-          </td>
-          <td class="px-4 py-2">
-	    [Senhor], tem piedade.
-	    <br/>---<br/>
-	    [Deus], purifica-me pecador.
-	    <br/>---<br/>
-	    Bendiz, [ó minh'alma], ao Senhor.
-          </td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Genitivo</td>
-          <td class="px-4 py-2">Posse, origem, ausência</td>
-          <td class="px-4 py-2">Complemento nominal ("de algo")</td>
-          <td class="px-4 py-2 slavonic">
-	    Бlгословeно [цrтво nц7A].
-	    <br/>---<br/>
-	    Во [и4мz nц7A].
-	    <br/>---<br/>
-	    И3 њчи1сти ны2 [t всsкіz сквeрны].
-          </td>
-          <td class="px-4 py-2">
-	    Bendito seja [o Reino do Pai].
-	    <br/>---<br/>
-	    Em [nome do Pai].
-	    <br/>---<br/>
-	    E purifica-nos [de toda mácula].
-          </td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Dativo</td>
-          <td class="px-4 py-2">Destinatário, direção, benefício</td>
-          <td class="px-4 py-2">Objeto indireto ("para/a alguém")</td>
-          <td class="px-4 py-2 slavonic">
-	    Слaва nц7Y.
-	    <br/>---<br/>
-	    [Тебе] подобает всякая слава, честь и поклонение.*
-	    <br/>---<br/>
-	    И# [д¦ови твоемY].
-          </td>
-          <td class="px-4 py-2">
-	    Glória ao Pai.
-	    <br/>---<br/>
-	    [A Ti] pertencem toda glória, honra e adoração.
-	    <br/>---<br/>
-	    E [ao teu espírito].
-          </td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Acusativo</td>
-          <td class="px-4 py-2">Objeto direto da ação</td>
-          <td class="px-4 py-2">Objeto direto</td>
-          <td class="px-4 py-2 slavonic">
-	    Вёрую во є3ди1наго бGа nц7A вседержи1телz.
-	    <br/>---<br/>
-	    Њ ми1рэ всегw2 [мjра].
-	    <br/>---<br/>
-	    Пріими1те, kди1те, [сіE є4сть тёло моE].
-	    <br/>---<br/>
-	    Прес™yю, пречcтую, пребlгословeнную, слaвную вLчцу нaшу бцdу и3 приснодв7у мRjю.
-          </td>
-          <td class="px-4 py-2">
-	    Creio em um só Deus Pai Todo-Poderoso.
-	    <br/>---<br/>
-	    Pela paz de todo [o mundo].
-	    <br/>---<br/>
-	    Tomai, comei, [isto é o Meu Corpo].
-	    <br/>---<br/>
-	    Santíssima, Puríssima, Bendita e Gloriosa Soberana, a Mãe de Deus e sempre Virgem Maria.
-          </td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Instrumental</td>
-          <td class="px-4 py-2">Meio, modo, acompanhamento</td>
-          <td class="px-4 py-2">Adjunto adverbial de meio/modo ("com algo")</td>
-          <td class="px-4 py-2 slavonic">
-	    И# [со д¦омъ твои1мъ].
-	    <br/>---<br/>
-	    [Ми1ромъ] гDу пом0лимсz.
-	    <br/>---<br/>
-	    Заступи2, ... нaсъ, б9е, [твоeю благодaтію].
-          </td>
-          <td class="px-4 py-2">
-	    E [com teu espírito].
-	    <br/>---<br/>
-	    [Em paz], oremos ao Senhor.
-	    <br/>---<br/>
-	    Protege ... a nós, Deus, [pela Tua Graça].
-          </td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Prepositivo</td>
-          <td class="px-4 py-2">Localização, assunto, referência</td>
-          <td class="px-4 py-2">Adjunto adverbial de lugar/tema ("em/sobre/por algo")</td>
-          <td class="px-4 py-2 slavonic">
-	    [О Господе] воспою.*
-	    <br/>---<br/>
-	    [Њ ми1рэ] всегw2 мjра.
-	    <br/>---<br/>
-	    В [храме Твоем].*
-          </td>
-          <td class="px-4 py-2">
-	    Cantarei [sobre o Senhor].
-	    <br/>---<br/>
-	    [Pela paz] de todo o mundo.
-	    <br/>---<br/>
-	    No [Teu templo].
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  {data.map((i) =>
+    <section class="mb-10">
+      <h2 class="text-3xl text-center">{i.case}</h2>
+      <p class="text-center text-(--detail) mb-5 max-[425px]:text-[11px] text-sm">
+        {i.grammaticalEquivalency} · {i.syntacticFunction}
+      </p>
+      {Object.entries(i.examples).map(([k, v]) => (
+      <div class="container mx-auto mb-10">
+	<p class="slavonic max-[425px]:text-2xl text-4xl">{k}</p>
+	<p class="text-(--detail) max-[425px]:text-[13px] text-sm">{v}</p>
+      </div>
+      ))}
+      <hr class="mt-5 last-child:text-(--detail)"/>
+    </section>
+  )}
   </div>
 </Layout>
