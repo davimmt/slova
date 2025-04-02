@@ -18,19 +18,19 @@ import numerals from '../data/numerais.json';
   <h2 class="text-3xl font-bold text-center mb-10 text-(--primary)">
     Alfabeto
   </h2>
-  <div class="container-fluid mx-auto text-center text-white">
+  <div class="container mx-auto text-center text-white flex flex-wrap justify-around">
     {alphabet.map((i) =>
-    <div class="inline-block max-[425px]:mb-10 max-[425px]:mr-5 min-[425px]:mb-20 min-[425px]:mr-10">
+    <div class="max-[425px]:mb-10 min-[425px]:mb-20 mx-3">
       <p class="slavonic max-[620px]:text-5xl min-[620px]:text-7xl text-(--secondary)">
         {i.letter}<span class="ml-1 max-[620px]:hidden text-(--detail) text-sm">
 	  {i.name}
         </span>
       </p>
-      <p class="text-start text-(--detail) min-[620px]:hidden text-[10px]">{i.name}</p>
-      <p class="text-start max-[620px]:text-[12px] min-[620px]:text-sm">{i.phoneticEquivalency} | 
+      <p class="text-(--detail) min-[620px]:hidden text-[10px]">{i.name}</p>
+      <p class="max-[620px]:text-[12px] min-[620px]:text-sm">{i.phoneticEquivalency} | 
         <span class="slavonic text-[20px] max-[620px]:text-[15px]">{i.example}</span>
       </p>
-      <p class="text-start max-[620px]:text-[10px] min-[620px]:text-sm">{i.pronunciation} | {i.translation}</p>
+      <p class="max-[620px]:text-[10px] min-[620px]:text-sm">{i.pronunciation} | {i.translation}</p>
     </div>
     )}
   </div>
@@ -124,7 +124,7 @@ import numerals from '../data/numerais.json';
   <h2 class="text-3xl font-bold text-center mt-10 mb-5">
     Palavras comuns dos Serviços Litúrgicos
   </h2>
-  <div class="container-fluid mx-auto mb-10 max-[500px]:text-center max-[500px]:flex max-[500px]:flex-wrap">
+  <div class="container mx-auto mb-10 max-[500px]:text-center max-[500px]:flex max-[500px]:flex-wrap">
     {words.map((i) =>
     <div class="px-5 mb-5">
       <p class="slavonic text-4xl text-(--secondary)">{i.word}</p>
@@ -137,7 +137,7 @@ import numerals from '../data/numerais.json';
   <h2 class="text-3xl font-bold text-center mt-10 mb-5">
     Trechos comuns dos Serviços Litúrgicos
   </h2>
-  <div class="container-fluid mx-auto mb-10">
+  <div class="container mx-auto mb-10">
   {sections.map((i) =>
     <div class="mb-10">
       <p class="slavonic text-4xl">{i.section}</p>
@@ -150,9 +150,9 @@ import numerals from '../data/numerais.json';
   <h2 class="text-3xl font-bold text-center mt-10 mb-5 text-(--primary)">
     Numerais
   </h2>
-  <div class="container-fluid mx-auto text-center text-white">
+  <div class="container mx-auto text-white flex flex-wrap justify-around">
     {numerals.map((i) =>
-    <div class="inline-block text-start mb-10 max-[425px]:mr-5 min-[425px]:mr-10">
+    <div class="mb-10 max-[425px]:mx-2 min-[425px]:mx-7">
       <p class="slavonic text-7xl text-(--secondary)">
         {i.number}<span class="ml-1 text-(--detail) text-sm">{i.equivalent}</span>
       </p>
