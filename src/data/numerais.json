@@ -1,112 +1,112 @@
 [
   {
     "number": "№",
-    "pronunciation": "edín",
+    "pronunciation": "Iedín",
     "equivalent": "1"
   },
   {
     "number": "в7",
-    "pronunciation": "dva",
+    "pronunciation": "Dva",
     "equivalent": "2"
   },
   {
     "number": "G",
-    "pronunciation": "tri",
+    "pronunciation": "Triie",
     "equivalent": "3"
   },
   {
     "number": "д7",
-    "pronunciation": "chetýre",
+    "pronunciation": "Tchetýrie",
     "equivalent": "4"
   },
   {
     "number": "є7",
-    "pronunciation": "piat",
+    "pronunciation": "Piat",
     "equivalent": "5"
   },
   {
     "number": "ѕ7",
-    "pronunciation": "shest",
+    "pronunciation": "Xest",
     "equivalent": "6"
   },
   {
     "number": "з7",
-    "pronunciation": "sedm",
+    "pronunciation": "Siedm",
     "equivalent": "7"
   },
   {
     "number": "}",
-    "pronunciation": "osm",
+    "pronunciation": "Osm",
     "equivalent": "8"
   },
   {
     "number": "ѳ҃",
-    "pronunciation": "deviat",
+    "pronunciation": "Dieviat",
     "equivalent": "9"
   },
   {
     "number": "і҃",
-    "pronunciation": "désiat",
+    "pronunciation": "Diêsiat",
     "equivalent": "10"
   },
   {
     "number": "і҃№",
-    "pronunciation": "edín na désiate",
+    "pronunciation": "Iedín na Diêsiatie",
     "equivalent": "11"
   },
   {
     "number": "і҃в",
-    "pronunciation": "dva na désiate",
+    "pronunciation": "Dva na Diêsiatie",
     "equivalent": "12"
   },
   {
     "number": "к7",
-    "pronunciation": "dvadtsát",
+    "pronunciation": "Dvad Diêsiati",
     "equivalent": "20"
   },
   {
     "number": "л7",
-    "pronunciation": "tridtsát",
+    "pronunciation": "Triie Diêsiati",
     "equivalent": "30"
   },
   {
     "number": "м7",
-    "pronunciation": "chetyredesiat",
+    "pronunciation": "Sorok",
     "equivalent": "40"
   },
   {
     "number": "н҃7",
-    "pronunciation": "piatdesiat",
+    "pronunciation": "Piat Diêsiat",
     "equivalent": "50"
   },
   {
     "number": "з7",
-    "pronunciation": "shestdesiat",
+    "pronunciation": "Xiest Diêsiat",
     "equivalent": "60"
   },
   {
     "number": "о7",
-    "pronunciation": "sedmdesiat",
+    "pronunciation": "Siedm Diêsiat",
     "equivalent": "70"
   },
   {
     "number": "п7",
-    "pronunciation": "osmdesiat",
+    "pronunciation": "Osm Diêsiat",
     "equivalent": "80"
   },
   {
     "number": "ч7",
-    "pronunciation": "deviatdesiat",
+    "pronunciation": "Dieviat Diêsiat",
     "equivalent": "90"
   },
   {
     "number": "R",
-    "pronunciation": "sto",
+    "pronunciation": "Sto",
     "equivalent": "100"
   },
   {
     "number": "҂а",
-    "pronunciation": "týsiacha",
+    "pronunciation": "Týsiasha",
     "equivalent": "1000"
   }
 ]
