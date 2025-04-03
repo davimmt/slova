@@ -85,7 +85,7 @@ const data = [
   <div class="overflow-x-auto">
   {data.map((i) =>
     <section class="mb-10">
-      <h2 class="text-3xl text-center">{i.case}</h2>
+      <h2 id={i.case.toLowerCase()} class="text-3xl text-center">{i.case}</h2>
       <p class="text-center text-(--detail) mb-5 max-[425px]:text-[11px] text-sm">
         {i.grammaticalEquivalency} · {i.syntacticFunction}
       </p>
