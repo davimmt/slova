@@ -49,7 +49,7 @@ if (!item) {
       </h3>
       <div class="text-3xl sm:text-md md:text-3xl lg:text-3xl leading-relaxed break-words mb-6 lg:px-50">
         {item.text.map(i => (
-	<button class="cs relative mx-1 text-4xl hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.pronunciation} | ${i.translation}`" onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
+	<button class="cs relative mx-1 text-4xl hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.pronunciation} | ${i.translation}` onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
           <span class="slavonic select-text sm:select-none">{i.word}</span>
 	</button>
 	<button class="p hidden relative mx-1 text-4xl hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.translation}`" onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
