@@ -22,11 +22,12 @@ import numerals from '../data/numerais.json';
     {alphabet.map((i) =>
     <div class="max-[425px]:mb-10 min-[425px]:mb-20 mx-3">
       <p class="slavonic max-[620px]:text-5xl min-[620px]:text-7xl text-(--secondary)">
-        {i.letter}<span class="ml-1 max-[620px]:hidden text-(--detail) text-sm">
-	  {i.name}
-        </span>
+        {i.letter}<i class="s ml-1 max-[620px]:hidden text-(--detail) text-lg!">{i.name}</i><span class="max-[620px]:hidden text-(--detail) text-sm"> ({i.name_translation})</span>
       </p>
-      <p class="text-(--detail) min-[620px]:hidden text-[10px]">{i.name}</p>
+      <p class="slavonic text-(--detail) min-[620px]:hidden text-[15px]">{i.name}
+        <span class="text-[10px]">({i.name_translation})</span>
+      </p>
+      <p class="text-(--detail) min-[620px]:hidden text-[10px]"></p>
       <p class="max-[620px]:text-[12px] min-[620px]:text-sm">{i.phoneticEquivalency} | 
         <span class="slavonic text-[20px] max-[620px]:text-[15px]">{i.example}</span>
       </p>
@@ -38,12 +39,16 @@ import numerals from '../data/numerais.json';
     ¹ Lê-se "piêdade", "ôtôrrino"; <a class="underline" href="#2">veja aqui.</a><br/>
     ² *<br/>
     ³ Gutural, <a class="underline" href="#3">veja aqui.</a><br/>
-    ⁴ Som "sh" mais forte, em comparação com o anterior "x".
+    ⁴ "<i class="s">Щ</i>" tem o som de "sh" mais forte, em comparação com 
+      o "x" de "<i class="s">ш</i>".
       Caso "<i class="s">ш</i>" venha acompanhado de "<i class="s">ъ</i>" (sinal duro),
-      eu trocarei a transliteração de "x" para "sh",
+      trocarei a transliteração de "x" para "sh",
       semelhante ao "<i class="s">щ</i>", como em "<i class="s">нaшъ</i>":
-      fica "násh" e não mais "náx".<br/>
+      fica "násh" e não mais "náx" (veja o exemplo do item 7).<br/>
     ⁵ Gutural, <a class="underline" href="#3">veja aqui.</a><br/>
+    ⁶ Quando usado depois de "a" ou "e", pronuncia-se "v"; do contário, "i".<br/>
+    7 Sinal duro, não vocalizado, fortalece a consoante anterior (veja o exemplo do item 4) e separa sílabas.<br/>
+    8 Sinal suave, não vocalizado, suaviza a consoante anterior e separa sílabas.
   </p>
   <hr class="my-5 text-(--detail)"/>
   <h2 id="notas-transliteracao" class="text-3xl font-bold text-center mt-10 mb-3">
@@ -128,9 +133,9 @@ import numerals from '../data/numerais.json';
   <h2 id="palavras" class="text-3xl font-bold text-center mt-10 mb-5">
     Palavras comuns dos Serviços Litúrgicos
   </h2>
-  <div class="container mx-auto mb-10 max-[500px]:text-center max-[500px]:flex max-[500px]:flex-wrap">
+  <div class="container mx-auto mb-10 max-[500px]:text-center max-[500px]:flex max-[500px]:flex-wrap max-[500px]:justify-around">
     {words.map((i) =>
-    <div class="px-5 mb-5">
+    <div class="mb-5 max-[500px]:px-5">
       <p class="slavonic text-4xl text-(--secondary)">{i.word}</p>
       <p class="text-sm text-white">{i.pronunciation}</p>
       <p class="text-sm text-(--detail)">{i.translation}</p>

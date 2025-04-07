@@ -1,7 +1,8 @@
 [
   {
     "letter": "Аа",
-    "name": "Азъ (Az)",
+    "name": "Аꙁъ",
+    "name_translation": "Az",
     "phoneticEquivalency": "[a]bacaxi",
     "example": "Ґми1нь",
     "pronunciation": "Amín",
@@ -9,7 +10,8 @@
   },
   {
     "letter": "Бб",
-    "name": "Буки (Buki)",
+    "name": "Бuы",
+    "name_translation": "Buky",
     "phoneticEquivalency": "[b]ola",
     "example": "Б9е",
     "pronunciation": "Bôjie",
@@ -17,7 +19,8 @@
   },
   {
     "letter": "Вв",
-    "name": "Вѣди (Vědi)",
+    "name": "Вѣдѣ",
+    "name_translation": "Viedie",
     "phoneticEquivalency": "[v]aca",
     "example": "Вѣра",
     "pronunciation": "Viêra",
@@ -25,7 +28,8 @@
   },
   {
     "letter": "Гг",
-    "name": "Глаголи (Glagoli)",
+    "name": "Глаголи",
+    "name_translation": "Glagoli",
     "phoneticEquivalency": "[g]ato",
     "example": "ГDи",
     "pronunciation": "Gôspodi",
@@ -33,7 +37,8 @@
   },
   {
     "letter": "Дд",
-    "name": "Добро (Dobro)",
+    "name": "Добро",
+    "name_translation": "Dobro",
     "phoneticEquivalency": "[d]ado",
     "example": "д¦у",
     "pronunciation": "Dúʁu",
@@ -41,7 +46,8 @@
   },
   {
     "letter": "Ее",
-    "name": "Есть (Iest)",
+    "name": "Есть",
+    "name_translation": "Iest",
     "phoneticEquivalency": "p[ie]dade¹",
     "example": "Еси",
     "pronunciation": "Iêsi",
@@ -49,7 +55,8 @@
   },
   {
     "letter": "Жж",
-    "name": "Живѣте (Jivěte)",
+    "name": "Живѣте",
+    "name_translation": "Jivietie",
     "phoneticEquivalency": "[j]ogo",
     "example": "Жи1зни",
     "pronunciation": "Jízni",
@@ -57,15 +64,17 @@
   },
   {
     "letter": "Ѕѕ",
-    "name": "Дзѣло (Dzělo)",
-    "phoneticEquivalency": "na[dz]e²",
-    "example": "Ѕвѣзда",
+    "name": "ꙃѣло",
+    "name_translation": "Dzielo",
+    "phoneticEquivalency": "[dz]²",
+    "example": "",
     "pronunciation": "",
-    "translation": "Glória"
+    "translation": ""
   },
   {
     "letter": "Зз",
-    "name": "Земля (Zemlya)",
+    "name": "Земля",
+    "name_translation": "Ziemlya",
     "phoneticEquivalency": "[z]ebra",
     "example": "Земли2",
     "pronunciation": "Ziemlí",
@@ -73,7 +82,8 @@
   },
   {
     "letter": "Ии",
-    "name": "Иже (Ije)",
+    "name": "Иже",
+    "name_translation": "Ijie",
     "phoneticEquivalency": "[i]glu",
     "example": "Истина",
     "pronunciation": "Ínstina",
@@ -81,7 +91,8 @@
   },
   {
     "letter": "Іі",
-    "name": "І (I)",
+    "name": "І",
+    "name_translation": "I",
     "phoneticEquivalency": "[i]glu",
     "example": "Іисусъ",
     "pronunciation": "Íisus",
@@ -89,15 +100,17 @@
   },
   {
     "letter": "Кк",
-    "name": "Како (Kako)",
-    "phoneticEquivalency": "k | [ca]sa",
+    "name": "Како",
+    "name_translation": "Kako",
+    "phoneticEquivalency": "[k] de [ca]sa",
     "example": "Крестъ",
     "pronunciation": "Kriest",
     "translation": "Cruz"
   },
   {
     "letter": "Лл",
-    "name": "Люди (Lyudi)",
+    "name": "Люди",
+    "name_translation": "Lyudi",
     "phoneticEquivalency": "[l]ua",
     "example": "Люди",
     "pronunciation": "Liudi",
@@ -105,7 +118,8 @@
   },
   {
     "letter": "Мм",
-    "name": "Мыслѣте (Myslěte)",
+    "name": "Мыслѣте",
+    "name_translation": "Myslietie",
     "phoneticEquivalency": "[m]ão",
     "example": "Миръ",
     "pronunciation": "Mir",
@@ -113,7 +127,8 @@
   },
   {
     "letter": "Нн",
-    "name": "Нашъ (Nash)",
+    "name": "Нашъ",
+    "name_translation": "Nash",
     "phoneticEquivalency": "[n]ovo",
     "example": "Небеса",
     "pronunciation": "Niebiesá",
@@ -121,7 +136,8 @@
   },
   {
     "letter": "Оо",
-    "name": "Онъ (On)",
+    "name": "Онъ",
+    "name_translation": "On",
     "phoneticEquivalency": "[o]vo",
     "example": "Отецъ",
     "pronunciation": "Ôtiêts",
@@ -129,7 +145,8 @@
   },
   {
     "letter": "Пп",
-    "name": "Покой (Pokoy)",
+    "name": "Покой",
+    "name_translation": "Pokoi",
     "phoneticEquivalency": "[p]ai",
     "example": "Побѣда",
     "pronunciation": "Pobiêda",
@@ -137,7 +154,8 @@
   },
   {
     "letter": "Рр",
-    "name": "Рцы (Rtsy)",
+    "name": "Рцы",
+    "name_translation": "Rtsy",
     "phoneticEquivalency": "pa[r]aíso",
     "example": "Радость",
     "pronunciation": "Radost",
@@ -145,7 +163,8 @@
   },
   {
     "letter": "Сс",
-    "name": "Слово (Slovo)",
+    "name": "Слово",
+    "name_translation": "Slovo",
     "phoneticEquivalency": "[s]ol",
     "example": "СлHвw",
     "pronunciation": "Slovo",
@@ -153,23 +172,35 @@
   },
   {
     "letter": "Тт",
-    "name": "Твѣрдо (Tvěrdo)",
+    "name": "Твѣрдо",
+    "name_translation": "Tvěrdo",
     "phoneticEquivalency": "[t]elha",
     "example": "Ты",
     "pronunciation": "Ty",
     "translation": "Tu"
   },
   {
-    "letter": "Уу/u",
-    "name": "Укъ (Uk)",
+    "letter": "Уу",
+    "name": "Укъ",
+    "name_translation": "Uk",
     "phoneticEquivalency": "[u]va",
     "example": "Учитель",
     "pronunciation": "Utchítel",
     "translation": "Mestre"
   },
   {
+    "letter": "Uu",
+    "name": "Укъ",
+    "name_translation": "Uk",
+    "phoneticEquivalency": "[u]va",
+    "example": "Ўтёшителю",
+    "pronunciation": "Utiêxitieliu",
+    "translation": "Consolador"
+  },
+  {
     "letter": "Фф",
-    "name": "Фертъ (Fert)",
+    "name": "Фертъ",
+    "name_translation": "Fert",
     "phoneticEquivalency": "[f]aca",
     "example": "Фома",
     "pronunciation": "Foma",
@@ -177,7 +208,8 @@
   },
   {
     "letter": "Хх",
-    "name": "Хѣръ (Khěr)",
+    "name": "Хѣръ",
+    "name_translation": "Khěr",
     "phoneticEquivalency": "ʁ³",
     "example": "Христосъ",
     "pronunciation": "ʁristos",
@@ -185,7 +217,8 @@
   },
   {
     "letter": "Ww",
-    "name": "Омега (Omega)",
+    "name": "Омега",
+    "name_translation": "Omega",
     "phoneticEquivalency": "[o]vo",
     "example": "Њчи1сти",
     "pronunciation": "Ôtchísti",
@@ -201,7 +234,8 @@
   },
   {
     "letter": "Цц",
-    "name": "Цы (Tsy)",
+    "name": "Цы",
+    "name_translation": "Tsy",
     "phoneticEquivalency": "[ts]unami",
     "example": "Царь",
     "pronunciation": "Tsar",
@@ -209,7 +243,8 @@
   },
   {
     "letter": "Чч",
-    "name": "Червь (Cherv)",
+    "name": "Червь",
+    "name_translation": "Cherv",
     "phoneticEquivalency": "[tc]hau",
     "example": "Честный",
     "pronunciation": "Tchiestny",
@@ -217,63 +252,71 @@
   },
   {
     "letter": "Шш",
-    "name": "Ша (Sha)",
+    "name": "Ша",
+    "name_translation": "Xa",
     "phoneticEquivalency": "[x]erife⁴",
     "example": "Шестъ",
-    "pronunciation": "Shiest",
+    "pronunciation": "Xiest",
     "translation": "Seis"
   },
   {
     "letter": "Щщ",
-    "name": "Ща (Shcha)",
+    "name": "Ща",
+    "name_translation": "Sha",
     "phoneticEquivalency": "[sh]ow⁴",
     "example": "Щедрый",
-    "pronunciation": "",
+    "pronunciation": "Shiedryi",
     "translation": "Generoso"
   },
   {
     "letter": "Ыы",
-    "name": "Йеры (Yery)",
-    "phoneticEquivalency": "y | ɨ⁵",
+    "name": "Йеры",
+    "name_translation": "Yery",
+    "phoneticEquivalency": "[y] ou [ɨ]⁵",
     "example": "Сыну",
     "pronunciation": "Sýnu",
     "translation": "Filho"
   },
   {
     "letter": "Ъъ",
-    "name": "Йеръ (Yer)",
-    "phoneticEquivalency": " - (sinal duro, não vocalizado, separa sílabas)",
-    "example": "Съ нами",
-    "pronunciation": "",
-    "translation": "Conosco"
+    "name": "Йеръ",
+    "name_translation": "Yer",
+    "phoneticEquivalency": "--- [7]",
+    "example": "Нaшъ",
+    "pronunciation": "Násh",
+    "translation": "Nosso"
   },
   {
     "letter": "Ьь",
-    "name": "Йерь (Yer')",
-    "phoneticEquivalency": " - (sinal suave, suaviza a consoante anterior)",
+    "name": "Йерь",
+    "name_translation": "Yer'",
+    "phoneticEquivalency": "--- [8]",
     "example": "День",
     "pronunciation": "Diên",
     "translation": "Dia"
   },
   {
     "letter": "Ѣѣ",
-    "name": "Ять (Yat)",
-    "phoneticEquivalency": "\"ie\" (som entre \"e\" e \"ia\")*",
+    "name": "Ять",
+    "name_translation": "Yat",
+    "phoneticEquivalency": "p[ie]dade¹",
     "example": "Вѣ1ра",
     "pronunciation": "Viêra",
     "translation": "Fé"
   },
   {
-    "letter": "Kk",
-    "name": "Я (Ya)",
+    "letter": "Яя",
+    "name": "Я",
+    "name_translation": "Ya",
     "phoneticEquivalency": "[ia]te",
-    "example": "Ꙗко",
+    "example": "Яко",
     "pronunciation": "Iako",
     "translation": "Pois"
   },
   {
     "letter": "Юю",
-    "name": "Ю (Yu)",
+    "name": "Ю",
+    "name_translation": "Yu",
     "phoneticEquivalency": "[iu]goslávia",
     "example": "Юность",
     "pronunciation": "Iunost",
@@ -290,6 +333,7 @@
   {
     "letter": "Pp",
     "name": "",
+    "name_translation": "Ksi",
     "phoneticEquivalency": "[ps]eudo",
     "example": "pал0мъ",
     "pronunciation": "Psalôm",
@@ -298,15 +342,26 @@
   {
     "letter": "Ff",
     "name": "",
-    "phoneticEquivalency": "",
+    "name_translation": "Fitá",
+    "phoneticEquivalency": "[f]aca",
     "example": "",
     "pronunciation": "",
     "translation": ""
   },
   {
     "letter": "Vv",
-    "name": "",
-    "phoneticEquivalency": "",
+    "name": "Vжица",
+    "name_translation": "Íjitsa",
+    "phoneticEquivalency": "[i]glu ou [v]aca⁶",
+    "example": "",
+    "pronunciation": "",
+    "translation": ""
+  },
+  {
+    "letter": "Xx",
+    "name": "ѯи",
+    "name_translation": "Ksi",
+    "phoneticEquivalency": "[ks]",
     "example": "",
     "pronunciation": "",
     "translation": ""
