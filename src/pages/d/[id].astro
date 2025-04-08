@@ -26,8 +26,9 @@ if (!item) {
     <p class="absolute z-1 flex top-3 justify-center opacity-7 max-[425px]:text-[10px]">
       <a class="outline-none" href="/slova/">Slovo</a>
     </p>
-    <span class="z-1 absolute top-3 right-3 hover-left after:w-[100px]" data-tooltip="Clique nas palavras para descrevê-las."
-      onclick="openModal('modal-tip')">
+    <span class="z-1 absolute top-3 right-3 hover-left after:w-[100px]"
+    data-tooltip="Clique nas palavras para descrevê-las."
+    onclick="openModal('modal-tip')">
       <svg class="hover:stroke-(--primary) focus:stroke-(--primary) transition-colors duration-200" 
         viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" width="20" height="20">
         <!-- Circle -->
@@ -38,13 +39,33 @@ if (!item) {
         <circle cx="12" cy="7" r="0.5"/>
       </svg>
     </span>
-    <div class="container mx-auto p-10 max-w-full text-center relative">
-      <h1 class="text-5xl sm:text-md md:text-5xl lg:text-5xl font-bold mb-3 slavonic text-(--primary)"
+    <div class="absolute top-3 left-3 text-[13px] flex justify-center gap-0">
+      <button id="p" class="px-2 rounded-l-md border border-(--secondary) transition-colors
+      focus:outline-none opacity-50 hover:opacity-100 cursor-pointer"
+      onclick="changeText('p')">
+        Abc
+      </button>
+      <button id="cs" class="px-2 rounded-r-md border border-(--secondary) transition-colors
+      focus:outline-none hover:opacity-100 cursor-pointer"
       onclick="changeText('cs')">
+	<i class="s">Абв</i>
+      </button>
+    </div>
+    <!--<div class="absolute top-3 right-3 flex justify-center gap-0">
+      <button class="px-2 rounded-l-md border border-(--secondary) transition-colors
+      focus:outline-none cursor-pointer">
+        A+
+      </button>
+      <button class="px-2 rounded-r-md border border-(--secondary) transition-colors
+      focus:outline-none cursor-pointer">
+	A‒
+      </button>
+    </div>-->
+    <div class="container mx-auto p-10 max-w-full text-center relative">
+      <h1 class="text-5xl sm:text-md font-bold mb-3 slavonic text-(--primary)">
         {item.name}
       </h1>
-      <h3 class="text-sm md:text-md italic text-(--detail) mb-7"
-      onclick="changeText('p')">
+      <h3 class="text-sm md:text-md italic text-(--detail) mb-7">
         {item.translation}
       </h3>
       <div class="text-3xl sm:text-md md:text-3xl lg:text-3xl leading-relaxed break-words mb-6 lg:px-50">
@@ -107,25 +128,26 @@ if (!item) {
 
       function changeText(l) {
         if (l === "cs") {
-	  for (const e of document.getElementsByClassName("p")) {
-	    e.classList.remove('inline-block');
-	    e.classList.add('hidden');
-	  }
-	  for (const e of document.getElementsByClassName("cs")) {
-	    e.classList.remove('hidden');
-	    e.classList.add('inline-block');
-	  }
+	  show = "cs";
+	  hide = "p";
 	}
 	else if (l == "p") {
-	  for (const e of document.getElementsByClassName("cs")) {
-	    e.classList.remove('inline-block');
-	    e.classList.add('hidden');
-	  }
-	  for (const e of document.getElementsByClassName("p")) {
-	    e.classList.remove('hidden');
-	    e.classList.add('inline-block');
-	  }
+	  show = "p";
+	  hide = "cs";
 	}
+
+	for (const e of document.getElementsByClassName(hide)) {
+	  e.classList.remove('inline-block');
+	  e.classList.add('hidden');
+	}
+
+	for (const e of document.getElementsByClassName(show)) {
+	  e.classList.remove('hidden');
+	  e.classList.add('inline-block');
+	}
+
+	document.getElementById(show).classList.remove('opacity-50');
+	document.getElementById(hide).classList.add('opacity-50');
       }
     </script>
   </body>
