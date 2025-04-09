@@ -39,7 +39,7 @@ if (!item) {
         <circle cx="12" cy="7" r="0.5"/>
       </svg>
     </span>
-    <div class="absolute top-3 left-3 text-[13px] flex justify-center gap-0">
+    <div class="z-1 absolute top-3 left-3 text-[13px] flex justify-center gap-0">
       <button id="p" class="px-2 rounded-l-md border border-(--secondary) transition-colors
       focus:outline-none opacity-50 hover:opacity-100 cursor-pointer"
       onclick="changeText('p')">
@@ -62,18 +62,18 @@ if (!item) {
       </button>
     </div>-->
     <div class="container mx-auto p-10 max-w-full text-center relative">
-      <h1 class="text-5xl sm:text-md font-bold mb-3 slavonic text-(--primary)">
+      <h1 class="text-5xl sm:text-md font-bold my-3 slavonic text-(--primary)">
         {item.name}
       </h1>
       <h3 class="text-sm md:text-md italic text-(--detail) mb-7">
         {item.translation}
       </h3>
-      <div class="text-3xl sm:text-md md:text-3xl lg:text-3xl leading-relaxed break-words mb-6 lg:px-50">
+      <div class="break-words mb-6 lg:px-50">
         {item.text.map(i => (
 	<button class="cs relative mx-1 text-4xl hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.pronunciation} | ${i.translation}` onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
           <span class="slavonic select-text sm:select-none">{i.word}</span>
 	</button>
-	<button class="p hidden relative mx-1 text-4xl hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.translation}`" onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
+	<button class="p hidden relative mx-1 text-3xl hover:text-(--primary) after:max-w-[200px] after:overflow-hidden after:text-ellipsis after:whitespace-nowrap" data-tooltip=`${i.translation}`" onclick={`populateModal('${i.word}', '${i.translation}', '${i.pronunciation}', '${i.case}'); openModal('modal')`}>
           <span class="select-text sm:select-none">{i.pronunciation}</span>
         </button>
         ))}
