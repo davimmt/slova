@@ -95,6 +95,25 @@ i.s {
   font-size: 1.3em;
 }
 
+i.sh {
+  font-family: "Triodion";
+  font-style: normal;
+  position: relative;
+  display: inline-block;
+}
+
+i.sh::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -5px;
+  right: -5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-color: oklch(0.637 0.237 25.331 / 0.1);
+  z-index: -1;
+}
+
 /* Table related */
 thead > tr {
   background-color: var(--color-red-900);

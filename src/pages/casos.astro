@@ -15,9 +15,9 @@ const data = [
     "grammaticalEquivalency": "Vocativo",
     "syntacticFunction": "Chamamento, invocação direta",
     "examples": {
-      "[ГDи], поми1луй.": "[Senhor], tem piedade.",
-      "[Боже], очисти мя грешного.*": "[Ó Deus], purifica-me pecador.",
-      "Бlгослови2, [душE моS], гDа.": "Bendiz, [ó minh'alma], ao Senhor.",
+    "<i class=\"sh\">ГDи</i>, поми1луй.": "[Senhor], tem piedade.",
+      "<i class=\"sh\">Боже</i>, очисти мя грешного.*": "[Ó Deus], purifica-me pecador.",
+      "Бlгослови2, <i class=\"sh\">душE моS</i>, гDа.": "Bendiz, [ó minh'alma], ao Senhor.",
     },
   },
   {
@@ -25,9 +25,9 @@ const data = [
     "grammaticalEquivalency": "Complemento nominal (\"de algo\")",
     "syntacticFunction": "Posse, origem, ausência",
     "examples": {
-      "Бlгословeно [цrтво nц7A].": "Bendito seja [o Reino do Pai].",
-      "Во [и4мz nц7A].": "Em [nome do Pai].",
-      "И3 њчи1сти ны2 [t всsкіz сквeрны].": "E purifica-nos [de toda mácula]."
+      "Бlгословeно <i class=\"sh\">цrтво nц7A</i>.": "Bendito seja [o Reino do Pai].",
+      "Во <i class=\"sh\">и4мz nц7A</i>.": "Em [nome do Pai].",
+      "И3 њчи1сти ны2 <i class=\"sh\">t всsкіz сквeрны</i>.": "E purifica-nos [de toda mácula]."
     }
   },
   {
@@ -36,8 +36,8 @@ const data = [
     "syntacticFunction": "Destinatário, direção, benefício",
     "examples": {
       "Слaва nц7Y.": "Glória ao Pai.",
-      "[Тебе] подобает всякая слава, честь и поклонение.*": "[A Ti] pertencem toda glória, honra e adoração.",
-      "И# [д¦ови твоемY].": "E [ao teu espírito]."
+      "<i class=\"sh\">Тебе</i> подобает всякая слава, честь и поклонение.*": "[A Ti] pertencem toda glória, honra e adoração.",
+      "И# <i class=\"sh\">д¦ови твоемY</i>.": "E [ao teu espírito]."
     }
   },
   {
@@ -46,8 +46,8 @@ const data = [
     "syntacticFunction": "Objeto direto da ação",
     "examples": {
       "Вёрую во є3ди1наго бGа nц7A вседержи1телz.": "Creio em um só Deus Pai Todo-Poderoso.",
-      "Њ ми1рэ всегw2 [мjра].": "Pela paz de todo [o mundo].",
-      "Пріими1те, kди1те, [сіE є4сть тёло моE].": "Tomai, comei, [isto é o Meu Corpo].",
+      "Њ ми1рэ всегw2 <i class=\"sh\">мjра</i>.": "Pela paz de todo [o mundo].",
+      "Пріими1те, kди1те, <i class=\"sh\">сіE є4сть тёло моE</i>.": "Tomai, comei, [isto é o Meu Corpo].",
       "Прес™yю, пречcтую, пребlгословeнную, слaвную вLчцу нaшу бцdу и3 приснодв7у мRjю.": "Santíssima, Puríssima, Bendita e Gloriosa Soberana, a Mãe de Deus e sempre Virgem Maria."
     }
   },
@@ -56,9 +56,9 @@ const data = [
     "grammaticalEquivalency": "Adjunto adverbial de meio/modo (\"com algo\")",
     "syntacticFunction": "Meio, modo, acompanhamento",
     "examples": {
-      "И# [со д¦омъ твои1мъ].": "E [com teu espírito].",
-      "[Ми1ромъ] гDу пом0лимсz.": "[Em paz], oremos ao Senhor.",
-      "Заступи2... нaсъ, б9е, [твоeю благодaтію].": "Protege... a nós, Deus, [pela Tua Graça]."
+      "И# <i class=\"sh\">со д¦омъ твои1мъ</i>.": "E [com teu espírito].",
+      "<i class=\"sh\">Ми1ромъ</i> гDу пом0лимсz.": "[Em paz], oremos ao Senhor.",
+      "Заступи2... нaсъ, б9е, <i class=\"sh\">твоeю благодaтію</i>.": "Protege... a nós, Deus, [pela Tua Graça]."
     }
   },
   {
@@ -66,9 +66,9 @@ const data = [
     "grammaticalEquivalency": "Adjunto adverbial de lugar/tema (\"em/sobre/por algo\")",
     "syntacticFunction": "Localização, assunto, referência",
     "examples": {
-      "[О Господе] воспою.*": "Cantarei [sobre o Senhor].",
-      "[Њ ми1рэ] всегw2 мjра.": "[Pela paz] de todo o mundo.",
-      "В [храме Твоем].*": "No [Teu templo]."
+      "<i class=\"sh\">О Господе</i> воспою.*": "Cantarei [sobre o Senhor].",
+      "<i class=\"sh\">Њ ми1рэ</i> всегw2 мjра.": "[Pela paz] de todo o mundo.",
+      "В <i class=\"sh\">храме Твоем</i>.*": "No [Teu templo]."
     }
   }
 ];
@@ -84,19 +84,19 @@ const data = [
   </p>
   <div class="overflow-x-auto">
   {data.map((i) =>
-    <section class="mb-10">
-      <h2 id={i.case.toLowerCase()} class="text-3xl text-center">{i.case}</h2>
+    <div class="container mx-auto mb-10">
+      <h2 id={i.case.toLowerCase()} class="text-4xl text-center">{i.case}</h2>
       <p class="text-center text-(--detail) mb-5 max-[425px]:text-[11px] text-sm">
         {i.grammaticalEquivalency} · {i.syntacticFunction}
       </p>
       {Object.entries(i.examples).map(([k, v]) => (
       <div class="container mx-auto mb-10">
-	<p class="slavonic max-[425px]:text-2xl text-4xl">{k}</p>
-	<p class="text-(--detail) max-[425px]:text-[13px] text-sm">{v}</p>
+	<p class="slavonic max-[425px]:text-2xl text-4xl" set:html={k}></p>
+	<p class="text-(--detail) max-[425px]:text-[13px] text-sm mt-2">{v}</p>
       </div>
       ))}
       <hr class="mt-5 last-child:text-(--detail)"/>
-    </section>
+    </div>
   )}
   </div>
 </Layout>
