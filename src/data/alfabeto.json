@@ -30,7 +30,7 @@
     "letter": "Гг",
     "name": "Глаголи",
     "name_translation": "Glagoli",
-    "phoneticEquivalency": "[g]ato",
+    "phoneticEquivalency": "[g]ato¹",
     "example": "ГDи",
     "pronunciation": "Gôspodi",
     "translation": "Senhor"
@@ -48,7 +48,7 @@
     "letter": "Ее",
     "name": "Есть",
     "name_translation": "Iest",
-    "phoneticEquivalency": "p[ie]dade¹",
+    "phoneticEquivalency": "p[ie]dade²",
     "example": "Еси",
     "pronunciation": "Iêsi",
     "translation": "És"
@@ -66,7 +66,7 @@
     "letter": "Ѕѕ",
     "name": "ꙃѣло",
     "name_translation": "Dzielo",
-    "phoneticEquivalency": "[dz]²",
+    "phoneticEquivalency": "[dz]³",
     "example": "",
     "pronunciation": "",
     "translation": ""
@@ -210,7 +210,7 @@
     "letter": "Хх",
     "name": "Хѣръ",
     "name_translation": "Khěr",
-    "phoneticEquivalency": "ʁ³",
+    "phoneticEquivalency": "ʁ⁴",
     "example": "Христосъ",
     "pronunciation": "ʁristos",
     "translation": "Cristo"
@@ -227,7 +227,7 @@
   {
     "letter": "Tt",
     "name": "",
-    "phoneticEquivalency": "[ot]orrino¹",
+    "phoneticEquivalency": "[ot]orrino²",
     "example": "Tпyстъ",
     "pronunciation": "Ôtpust",
     "translation": "Despedida"
@@ -254,7 +254,7 @@
     "letter": "Шш",
     "name": "Ша",
     "name_translation": "Xa",
-    "phoneticEquivalency": "[x]erife⁴",
+    "phoneticEquivalency": "[x]erife⁵",
     "example": "Шестъ",
     "pronunciation": "Xiest",
     "translation": "Seis"
@@ -263,7 +263,7 @@
     "letter": "Щщ",
     "name": "Ща",
     "name_translation": "Sha",
-    "phoneticEquivalency": "[sh]ow⁴",
+    "phoneticEquivalency": "[sh]ow⁵",
     "example": "Щедрый",
     "pronunciation": "Shiedryi",
     "translation": "Generoso"
@@ -272,7 +272,7 @@
     "letter": "Ыы",
     "name": "Йеры",
     "name_translation": "Yery",
-    "phoneticEquivalency": "[y] ou [ɨ]⁵",
+    "phoneticEquivalency": "[y] ou [ɨ]⁶",
     "example": "Сыну",
     "pronunciation": "Sýnu",
     "translation": "Filho"
@@ -299,7 +299,7 @@
     "letter": "Ѣѣ",
     "name": "Ять",
     "name_translation": "Yat",
-    "phoneticEquivalency": "p[ie]dade¹",
+    "phoneticEquivalency": "p[ie]dade²",
     "example": "Вѣ1ра",
     "pronunciation": "Viêra",
     "translation": "Fé"
@@ -352,7 +352,7 @@
     "letter": "Vv",
     "name": "Vжица",
     "name_translation": "Íjitsa",
-    "phoneticEquivalency": "[i]glu ou [v]aca⁶",
+    "phoneticEquivalency": "[i]glu ou [v]aca⁹",
     "example": "",
     "pronunciation": "",
     "translation": ""
