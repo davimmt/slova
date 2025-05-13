@@ -1,6 +1,7 @@
 ---
 import '../../styles/global.css';
 import texts from '../../data/textos.json';
+import Layout from '../../layouts/Layout.astro';
 
 export function getStaticPaths() {
   return texts.map(i => ({
@@ -14,18 +15,11 @@ const item = texts.find(i => i.id === id);
 if (!item) {
   return new Response('Documento não encontrado', { status: 404 });
 }
+
+const pageTitle = "Slovo - " + item.title;
 ---
 
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Slovo - {item.title}</title>
-  </head>
-  <body class="min-h-screen flex items-center justify-center overflow-x-hidden">
-    <p class="absolute z-1 flex top-3 justify-center opacity-7 max-[425px]:text-[10px]">
-      <a class="outline-none" href="/slova/">Slovo</a>
-    </p>
+<Layout title={pageTitle}>
     <span class="z-1 absolute top-3 right-3 hover-left after:w-[100px]"
     data-tooltip="Clique nas palavras para descrevê-las."
     onclick="openModal('modal-tip')">
@@ -128,27 +122,24 @@ if (!item) {
 
       function changeText(l) {
         if (l === "cs") {
-	  show = "cs";
-	  hide = "p";
-	}
-	else if (l == "p") {
-	  show = "p";
-	  hide = "cs";
-	}
+          show = "cs";
+          hide = "p";
+        }
+        else if (l == "p") {
+          show = "p";
+          hide = "cs";
+        }
+        for (const e of document.getElementsByClassName(hide)) {
+          e.classList.remove('inline-block');
+          e.classList.add('hidden');
+        }
+        for (const e of document.getElementsByClassName(show)) {
+          e.classList.remove('hidden');
+          e.classList.add('inline-block');
+        }
 
-	for (const e of document.getElementsByClassName(hide)) {
-	  e.classList.remove('inline-block');
-	  e.classList.add('hidden');
-	}
-
-	for (const e of document.getElementsByClassName(show)) {
-	  e.classList.remove('hidden');
-	  e.classList.add('inline-block');
-	}
-
-	document.getElementById(show).classList.remove('opacity-50');
-	document.getElementById(hide).classList.add('opacity-50');
+        document.getElementById(show).classList.remove('opacity-50');
+        document.getElementById(hide).classList.add('opacity-50');
       }
     </script>
-  </body>
-</html>
+</Layout>

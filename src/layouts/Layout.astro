@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 const siteName = "Slovo";
-const pageTitle = "Slovo";
+const { title } = Astro.props;
 ---
 
 <html lang="pt-BR">
@@ -9,7 +9,7 @@ const pageTitle = "Slovo";
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" type="image/x-icon" href="/slova/favicon.jpg"/>
-    <title>{pageTitle}</title>
+    <title>{title}</title>
   </head>
   <body class="min-h-screen flex items-center justify-center">
     <p class="absolute flex top-3 justify-center opacity-7 max-[425px]:text-[10px]"><a class="outline-none" href="/slova/">{siteName}</a></p>
